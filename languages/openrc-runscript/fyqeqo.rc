@@ -1,0 +1,8 @@
+#!/sbin/openrc-run
+description="Hello"
+
+start() {
+    ebegin "Saying hello"
+    eend 0
+}
+

@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the MiniZinc Data language
+# file: languages/<lang>/<random>.dzn
+
+print("Hello World!")
+

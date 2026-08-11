@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the OpenStep Property List language
+# file: languages/<lang>/<random>.plist
+
+print("Hello World!")
+

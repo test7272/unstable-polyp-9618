@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Pickle language
+# file: languages/<lang>/<random>.pkl
+
+print("Hello World!")
+

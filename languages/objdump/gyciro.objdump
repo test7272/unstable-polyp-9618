@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the ObjDump language
+# file: languages/<lang>/<random>.objdump
+
+print("Hello World!")
+

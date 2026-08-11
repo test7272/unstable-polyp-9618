@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the OpenType Feature File language
+# file: languages/<lang>/<random>.fea
+
+print("Hello World!")
+

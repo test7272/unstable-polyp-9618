@@ -1,0 +1,4 @@
+(define (domain hello)
+  (:predicates)
+)
+
