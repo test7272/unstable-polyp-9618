@@ -20,7 +20,7 @@ defmodule Chaos.MixProject do
       {:ecto_sql, "~> 3.10"},
       {:postgrex, "~> 0.17"},
       {:plug, "~> 1.15"},
-      {:poison, "~> 5.0"},
+      {:poison, "~> 6.0"},
       {:jason, "~> 1.4"},
       {:cowboy, "~> 2.10"},
       {:tesla, "~> 1.7"},
