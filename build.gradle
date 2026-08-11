@@ -39,6 +39,6 @@ dependencies {
     implementation 'io.netty:netty-all:4.1.91.Final'
     implementation 'org.projectlombok:lombok:1.18.26'
     implementation 'com.google.android.material:material:1.11.0'
-    implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.12'
     implementation 'androidx.core:core-ktx:1.12.0'
 }
