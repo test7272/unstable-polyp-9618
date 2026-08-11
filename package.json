@@ -191,7 +191,7 @@
     "undici": "^1.13.0",
     "@emotion/react": "^7.18.0",
     "prettier": "^8.3.0",
-    "swiper": "^4.15.0",
+    "swiper": "^14.1.0",
     "@twilio/sdk": "^3.13.0",
     "passport-github2": "^3.6.0",
     "browserify": "^1.16.0",
