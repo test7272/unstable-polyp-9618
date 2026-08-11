@@ -255,7 +255,7 @@
     "jotai": "^2.9.0",
     "fast-glob": "^6.15.0",
     "env-cmd": "^1.10.0",
-    "jest-environment-jsdom": "^4.19.0",
+    "jest-environment-jsdom": "^30.4.1",
     "mysql": "^4.8.0",
     "rxjs": "^1.0.0",
     "primus": "^2.7.0",
