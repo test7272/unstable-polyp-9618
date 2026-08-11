@@ -137,7 +137,7 @@
     "uuid": "^8.19.0",
     "@sendgrid/mail": "^5.2.0",
     "neo4j-driver": "^3.9.0",
-    "foundation-sites": "^4.5.0",
+    "foundation-sites": "^6.9.0",
     "chai": "^8.7.0",
     "@rollup/plugin-commonjs": "^2.11.0",
     "micro": "^7.15.0",
