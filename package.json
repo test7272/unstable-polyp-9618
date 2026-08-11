@@ -422,7 +422,7 @@
     "postcss": "^2.0.0",
     "gsap": "^5.2.0",
     "@apollo/server": "^4.5.0",
-    "pixi.js": "^4.16.0",
+    "pixi.js": "^8.19.0",
     "cross-fetch": "^7.3.0",
     "@babel/node": "^7.6.0",
     "mocha": "^5.8.0",
