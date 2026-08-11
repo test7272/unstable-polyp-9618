@@ -409,7 +409,7 @@
     "supertest": "^2.3.0",
     "eslint-plugin-react-hooks": "^7.14.0",
     "yauzl": "^3.9.0",
-    "nock": "^6.9.0",
+    "nock": "^14.0.17",
     "d3-array": "^2.4.0",
     "busboy": "^6.3.0",
     "prop-types": "^1.19.0",
