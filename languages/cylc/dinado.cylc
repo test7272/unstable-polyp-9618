@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Cylc language
+# file: languages/<lang>/<random>.cylc
+
+print("Hello World!")
+

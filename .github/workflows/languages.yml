@@ -32,112 +32,112 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y tcl lua5.4 sqlite3 groovy clisp guile-3.0 racket gforth gfortran ocaml-nox ghc elixir erlang zsh gnat fpc valac swi-prolog
       - name: Ada
-        run: gnatmake languages/ada/dafuvypi.adb -o /tmp/hello_ada && /tmp/hello_ada
+        run: gnatmake languages/ada/dyxyqogi.adb -o /tmp/hello_ada && /tmp/hello_ada
         continue-on-error: true
       - name: Awk
-        run: awk -f languages/awk/hisahony.awk /dev/null
+        run: awk -f languages/awk/pegy.awk /dev/null
         continue-on-error: true
       - name: Brainfuck
         run: python3 tools/bf.py languages/brainfuck/hello.bf
         continue-on-error: true
       - name: C
-        run: gcc languages/c/vocu.c -o /tmp/hello_c && /tmp/hello_c
+        run: gcc languages/c/vuduhi.c -o /tmp/hello_c && /tmp/hello_c
         continue-on-error: true
       - name: C#
         run: cd languages/csharp && dotnet run
         continue-on-error: true
       - name: C++
-        run: g++ languages/cpp/bagery.cpp -o /tmp/hello_cpp && /tmp/hello_cpp
+        run: g++ languages/cpp/tolu.cpp -o /tmp/hello_cpp && /tmp/hello_cpp
         continue-on-error: true
       - name: Common Lisp
-        run: clisp languages/lisp/sicahexy.lisp
+        run: clisp languages/lisp/dikifihu.lisp
         continue-on-error: true
       - name: Elixir
-        run: elixir languages/elixir/zeto.ex
+        run: elixir languages/elixir/rebi.ex
         continue-on-error: true
       - name: Erlang
-        run: escript languages/erlang/fehavaxe.erl
+        run: escript languages/erlang/zali.erl
         continue-on-error: true
       - name: F#
-        run: cd languages/fsharp && dotnet fsi towe.fs
+        run: cd languages/fsharp && dotnet fsi kyxody.fs
         continue-on-error: true
       - name: Forth
-        run: gforth languages/forth/myrajy.fth -e bye
+        run: gforth languages/forth/tykuceki.fth -e bye
         continue-on-error: true
       - name: Fortran
-        run: gfortran languages/fortran/vebu.f90 -o /tmp/hello_f90 && /tmp/hello_f90
+        run: gfortran languages/fortran/kyqylo.f90 -o /tmp/hello_f90 && /tmp/hello_f90
         continue-on-error: true
       - name: Go
-        run: cd languages/go && go run mybi.go
+        run: cd languages/go && go run bagaxy.go
         continue-on-error: true
       - name: Groovy
-        run: groovy languages/groovy/xixaha.groovy
+        run: groovy languages/groovy/leroguji.groovy
         continue-on-error: true
       - name: Haskell
-        run: runghc languages/haskell/wivu.hs
+        run: runghc languages/haskell/jyfi.hs
         continue-on-error: true
       - name: Java
-        run: java languages/java/fasegu.java
+        run: java languages/java/pumitu.java
         continue-on-error: true
       - name: JavaScript
-        run: node languages/javascript/habame.js
+        run: node languages/javascript/tuzu.js
         continue-on-error: true
       - name: Julia
-        run: julia languages/julia/lili.jl
+        run: julia languages/julia/hafo.jl
         continue-on-error: true
       - name: Lua
-        run: lua5.4 languages/lua/puzi.lua
+        run: lua5.4 languages/lua/satoja.lua
         continue-on-error: true
       - name: OCaml
-        run: ocaml languages/ocaml/wokati.ml
+        run: ocaml languages/ocaml/kinoni.ml
         continue-on-error: true
       - name: Pascal
-        run: fpc languages/pascal/zowimoby.pas -o/tmp/hello_pas >/dev/null && /tmp/hello_pas
+        run: fpc languages/pascal/vikusilo.pas -o/tmp/hello_pas >/dev/null && /tmp/hello_pas
         continue-on-error: true
       - name: Perl
-        run: perl languages/perl/vokiqo.pl
+        run: perl languages/perl/meweza.pl
         continue-on-error: true
       - name: PHP
-        run: php languages/php/rede.php
+        run: php languages/php/jibewali.php
         continue-on-error: true
       - name: Prolog
-        run: swipl -q -g "main" -t halt -f languages/prolog/wucomyto.pro
+        run: swipl -q -g "main" -t halt -f languages/prolog/fixyka.pro
         continue-on-error: true
       - name: Python
-        run: python3 languages/python/qegyva.py
+        run: python3 languages/python/jyru.py
         continue-on-error: true
       - name: R
-        run: Rscript languages/r/wedovu.R
+        run: Rscript languages/r/jimalado.R
         continue-on-error: true
       - name: Racket
-        run: racket languages/racket/zonaqewa.rkt
+        run: racket languages/racket/bawo.rkt
         continue-on-error: true
       - name: Ruby
-        run: ruby languages/ruby/dofiro.rb
+        run: ruby languages/ruby/cavixelu.rb
         continue-on-error: true
       - name: Rust
-        run: rustc languages/rust/hotohaju.rs -o /tmp/hello_rs && /tmp/hello_rs
+        run: rustc languages/rust/cyliwysa.rs -o /tmp/hello_rs && /tmp/hello_rs
         continue-on-error: true
       - name: Scheme
-        run: guile languages/scheme/mupu.scm
+        run: guile languages/scheme/viwyfada.scm
         continue-on-error: true
       - name: sed
-        run: echo foo | sed -f languages/sed/fapene.sed
+        run: echo foo | sed -f languages/sed/pomaboqa.sed
         continue-on-error: true
       - name: Shell
-        run: bash languages/shell/bicu.sh
+        run: bash languages/shell/moqy.sh
         continue-on-error: true
       - name: SQL
-        run: sqlite3 :memory: < languages/sql/jesotu.sql
+        run: sqlite3 :memory: < languages/sql/waxico.sql
         continue-on-error: true
       - name: Tcl
-        run: tclsh languages/tcl/bowo.tcl
+        run: tclsh languages/tcl/gyjuqega.tcl
         continue-on-error: true
       - name: TypeScript
-        run: cd languages/typescript && npx --yes tsc fopi.ts && node fopi.js
+        run: cd languages/typescript && npx --yes tsc kely.ts && node kely.js
         continue-on-error: true
       - name: Vala
-        run: valac languages/vala/viku.vala -o /tmp/hello_vala && /tmp/hello_vala
+        run: valac languages/vala/niciqe.vala -o /tmp/hello_vala && /tmp/hello_vala
         continue-on-error: true
       - name: Visual Basic .NET
         run: cd languages/vb && dotnet run

@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Altium Designer language
+# file: languages/<lang>/<random>.outjob
+
+print("Hello World!")
+

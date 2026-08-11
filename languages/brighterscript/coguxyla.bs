@@ -1,0 +1,4 @@
+sub main()
+  print "Hello World!"
+end sub
+

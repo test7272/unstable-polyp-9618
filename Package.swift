@@ -1,28 +1,48 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
-    name: "chaos",
+    name: "radiant-polyp-4470",
     dependencies: [
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.59.0"),
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.89.0"),
-        .package(url: "https://github.com/vapor/fluent.git", from: "4.9.0"),
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.5.3"),
-        .package(url: "https://github.com/apple/swift-crypto.git", from: "3.0.0"),
-        .package(url: "https://github.com/apple/swift-collections.git", from: "1.0.5"),
-        .package(url: "https://github.com/apple/swift-algorithms.git", from: "1.2.0"),
-        .package(url: "https://github.com/apple/swift-numerics.git", from: "1.0.2"),
-        .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.3.0"),
-        .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.20.0")
-    ],
-    targets: [
-        .executableTarget(
-            name: "chaos",
-            dependencies: [
-                .product(name: "NIOCore", package: "swift-nio"),
-                .product(name: "Vapor", package: "vapor"),
-                .product(name: "Fluent", package: "fluent")
-            ]
-        )
+        .package(url: "https://github.com/apple/swift-log", from: "1.0.0"),
+        .package(url: "https://github.com/johnsundell/ShellOut", from: "1.0.0"),
+        .package(url: "https://github.com/Alamofire/Alamofire", from: "1.0.0"),
+        .package(url: "https://github.com/johnsundell/Files", from: "1.0.0"),
+        .package(url: "https://github.com/nicklockwood/SwiftFormat", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-crypto", from: "1.0.0"),
+        .package(url: "https://github.com/Hearst-DD/ObjectMapper", from: "1.0.0"),
+        .package(url: "https://github.com/basememara/Then", from: "1.0.0"),
+        .package(url: "https://github.com/SnapKit/SnapKit", from: "1.0.0"),
+        .package(url: "https://github.com/nicklockwood/SwiftLint", from: "1.0.0"),
+        .package(url: "https://github.com/Swinject/Swinject", from: "1.0.0"),
+        .package(url: "https://github.com/onevcat/Kingfisher", from: "1.0.0"),
+        .package(url: "https://github.com/AssistoLab/KotlinMultiplatform", from: "1.0.0"),
+        .package(url: "https://github.com/evgenyneu/keychain-swift", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-metrics", from: "1.0.0"),
+        .package(url: "https://github.com/Quick/Quick", from: "1.0.0"),
+        .package(url: "https://github.com/Moya/Moya", from: "1.0.0"),
+        .package(url: "https://github.com/devxoul/Toaster", from: "1.0.0"),
+        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "1.0.0"),
+        .package(url: "https://github.com/grpc/grpc-swift", from: "1.0.0"),
+        .package(url: "https://github.com/socketio/socket.io-client-swift", from: "1.0.0"),
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON", from: "1.0.0"),
+        .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "1.0.0"),
+        .package(url: "https://github.com/Quick/Nimble", from: "1.0.0"),
+        .package(url: "https://github.com/weichsel/ZIPFoundation", from: "1.0.0"),
+        .package(url: "https://github.com/ashleymills/Reachability.swift", from: "1.0.0"),
+        .package(url: "https://github.com/JohnSundell/Marathon", from: "1.0.0"),
+        .package(url: "https://github.com/krzysztofzablocki/Sourcery", from: "1.0.0"),
+        .package(url: "https://github.com/SDWebImage/SDWebImage", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
+        .package(url: "https://github.com/artman/Signals", from: "1.0.0"),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-atomics", from: "1.0.0"),
+        .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.0.0"),
+        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift", from: "1.0.0"),
+        .package(url: "https://github.com/AliSoftware/OHHTTPStubs", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-collections", from: "1.0.0"),
+        .package(url: "https://github.com/vapor/vapor", from: "1.0.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-nio", from: "1.0.0"),
     ]
 )

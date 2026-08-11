@@ -1,854 +1,851 @@
 # Language coverage
 
-Detected from the **current** GitHub Linguist `languages.yml` at generation time.
+**Every language in the current GitHub Linguist `languages.yml` ships a real file** under `languages/<lang>/`. Detected at generation time.
 
 | Metric | Count |
 |---|---|
 | Linguist languages detected | 827 |
-| Languages with real source examples | 248 |
-| Executed in CI | 37 |
-| Real source but not CI-executed (toolchain required) | 211 |
-| Unsupported (no genuine example available) | 579 |
+| Real source examples | 488 |
+| &nbsp;&nbsp;– executed in CI (prints Hello World) | 37 |
+| &nbsp;&nbsp;– genuine source (toolchain not on CI runner) | 451 |
+| Valid documents (markup / data / prose) | 241 |
+| Best-effort generated | 98 |
+| **Total files** | 827 |
 
 Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77, transpiled: 8, library_only: 3.
 
-## Languages with real source examples (248)
+## Full language table (827)
 
-| Language | Linguist type | Example type | Status | Run command |
+| Language | Linguist type | Source kind | Status | Run command |
 |---|---|---|---|---|
-| 1C Enterprise | programming | syntax_only | not_ci_executed | `-` |
-| 4D | programming | syntax_only | not_ci_executed | `-` |
-| ABAP | programming | syntax_only | not_ci_executed | `-` |
-| ABAP CDS | programming | syntax_only | not_ci_executed | `-` |
-| Ada | programming | compiled | ci_executed | `gnatmake dafuvypi.adb -o /tmp/hello_ada && /tmp/hello_ada` |
-| AIDL | programming | syntax_only | not_ci_executed | `-` |
-| Aiken | programming | syntax_only | not_ci_executed | `-` |
-| AL | programming | syntax_only | not_ci_executed | `-` |
-| Aleo | programming | syntax_only | not_ci_executed | `-` |
-| ALGOL | programming | syntax_only | not_ci_executed | `-` |
-| Alloy | programming | syntax_only | not_ci_executed | `-` |
-| AMPL | programming | interpreted | not_ci_executed | `ampl pyxasona.ampl` |
-| ANTLR | programming | syntax_only | not_ci_executed | `-` |
-| Apex | programming | syntax_only | not_ci_executed | `-` |
-| APL | programming | syntax_only | not_ci_executed | `-` |
-| AppleScript | programming | syntax_only | not_ci_executed | `-` |
-| ASP.NET | programming | syntax_only | not_ci_executed | `-` |
-| AspectJ | programming | syntax_only | not_ci_executed | `-` |
-| Assembly | programming | compiled | not_ci_executed | `-` |
-| Asymptote | programming | interpreted | not_ci_executed | `asy pubozo.asy` |
-| ATS | programming | interpreted | not_ci_executed | `patscc sirajy.dats` |
-| Augeas | programming | syntax_only | not_ci_executed | `-` |
-| AutoHotkey | programming | syntax_only | not_ci_executed | `-` |
-| AutoIt | programming | syntax_only | not_ci_executed | `-` |
-| Awk | programming | interpreted | ci_executed | `awk -f hisahony.awk /dev/null` |
-| B4X | programming | syntax_only | not_ci_executed | `-` |
-| Ballerina | programming | syntax_only | not_ci_executed | `-` |
-| BAML | programming | syntax_only | not_ci_executed | `-` |
-| BASIC | programming | syntax_only | not_ci_executed | `-` |
-| Batchfile | programming | interpreted | not_ci_executed | `cmd cotolemo.bat` |
-| Befunge | programming | syntax_only | not_ci_executed | `-` |
-| Berry | programming | syntax_only | not_ci_executed | `-` |
-| Bicep | programming | syntax_only | not_ci_executed | `-` |
-| Bison | programming | syntax_only | not_ci_executed | `-` |
-| BitBake | programming | syntax_only | not_ci_executed | `-` |
-| BlitzBasic | programming | syntax_only | not_ci_executed | `-` |
-| BlitzMax | programming | syntax_only | not_ci_executed | `-` |
-| Bluespec | programming | syntax_only | not_ci_executed | `-` |
-| Boo | programming | syntax_only | not_ci_executed | `-` |
-| Boogie | programming | syntax_only | not_ci_executed | `-` |
-| BQN | programming | syntax_only | not_ci_executed | `-` |
-| Brainfuck | programming | interpreted | ci_executed | `python3 tools/bf.py hello.bf` |
-| Brightscript | programming | syntax_only | not_ci_executed | `-` |
-| C | programming | compiled | ci_executed | `gcc vocu.c -o /tmp/hello_c && /tmp/hello_c` |
-| C# | programming | compiled | ci_executed | `cd languages/csharp && dotnet run` |
-| C++ | programming | compiled | ci_executed | `g++ bagery.cpp -o /tmp/hello_cpp && /tmp/hello_cpp` |
-| C2hs Haskell | programming | syntax_only | not_ci_executed | `-` |
-| C3 | programming | interpreted | not_ci_executed | `c3c wody.c3` |
-| Cadence | programming | syntax_only | not_ci_executed | `-` |
-| Cairo | programming | syntax_only | not_ci_executed | `-` |
-| Cairo Zero | programming | syntax_only | not_ci_executed | `-` |
-| CameLIGO | programming | transpiled | not_ci_executed | `-` |
-| CAP CDS | programming | syntax_only | not_ci_executed | `-` |
-| Cap'n Proto | programming | syntax_only | not_ci_executed | `-` |
-| Carbon | programming | syntax_only | not_ci_executed | `-` |
-| CartoCSS | programming | syntax_only | not_ci_executed | `-` |
-| Ceylon | programming | interpreted | not_ci_executed | `ceylon kozeryby.ceylon` |
-| Chapel | programming | interpreted | not_ci_executed | `chpl xydomuhu.chpl` |
-| ChucK | programming | syntax_only | not_ci_executed | `-` |
-| Circom | programming | syntax_only | not_ci_executed | `-` |
-| Cirru | programming | syntax_only | not_ci_executed | `-` |
-| Clarion | programming | syntax_only | not_ci_executed | `-` |
-| Clarity | programming | syntax_only | not_ci_executed | `-` |
-| Classic ASP | programming | syntax_only | not_ci_executed | `-` |
-| Clean | programming | interpreted | not_ci_executed | `clm gubirixa.icl` |
-| CLIPS | programming | syntax_only | not_ci_executed | `-` |
-| Clojure | programming | syntax_only | not_ci_executed | `-` |
-| CMake | programming | syntax_only | not_ci_executed | `-` |
-| COBOL | programming | compiled | not_ci_executed | `-` |
-| CodeQL | programming | syntax_only | not_ci_executed | `-` |
-| CoffeeScript | programming | interpreted | not_ci_executed | `coffee lyky.coffee` |
-| ColdFusion | programming | syntax_only | not_ci_executed | `-` |
-| ColdFusion CFC | programming | syntax_only | not_ci_executed | `-` |
-| Common Lisp | programming | interpreted | ci_executed | `clisp sicahexy.lisp` |
-| Common Workflow Language | programming | syntax_only | not_ci_executed | `-` |
-| Component Pascal | programming | syntax_only | not_ci_executed | `-` |
-| Cool | programming | syntax_only | not_ci_executed | `-` |
-| CQL | programming | syntax_only | not_ci_executed | `-` |
-| Crystal | programming | compiled | not_ci_executed | `-` |
-| Csound | programming | interpreted | not_ci_executed | `csound lozibu.orc` |
-| Csound Score | programming | syntax_only | not_ci_executed | `-` |
-| CSS | markup | library_only | not_ci_executed | `-` |
-| Cuda | programming | syntax_only | not_ci_executed | `-` |
-| CUE | programming | syntax_only | not_ci_executed | `-` |
-| Cython | programming | interpreted | not_ci_executed | `cython rese.pyx` |
-| D | programming | compiled | not_ci_executed | `-` |
-| Dafny | programming | interpreted | not_ci_executed | `dafny hajy.dfy` |
-| Dart | programming | interpreted | not_ci_executed | `dart dakajizu.dart` |
-| Daslang | programming | syntax_only | not_ci_executed | `-` |
-| DataWeave | programming | syntax_only | not_ci_executed | `-` |
-| Dhall | programming | syntax_only | not_ci_executed | `-` |
-| DIGITAL Command Language | programming | syntax_only | not_ci_executed | `-` |
-| Dockerfile | programming | interpreted | not_ci_executed | `docker japy.dockerfile` |
-| Dune | programming | syntax_only | not_ci_executed | `-` |
-| Dylan | programming | syntax_only | not_ci_executed | `-` |
-| eC | programming | syntax_only | not_ci_executed | `-` |
-| ECL | programming | syntax_only | not_ci_executed | `-` |
-| ECLiPSe | programming | syntax_only | not_ci_executed | `-` |
-| EdgeQL | programming | syntax_only | not_ci_executed | `-` |
-| Eiffel | programming | compiled | not_ci_executed | `-` |
-| Elixir | programming | interpreted | ci_executed | `elixir zeto.ex` |
-| Elm | programming | transpiled | not_ci_executed | `-` |
-| Elvish | programming | interpreted | not_ci_executed | `elvish likykogy.elv` |
-| Emacs Lisp | programming | interpreted | not_ci_executed | `emacs --batch xijupyme.el` |
-| Erlang | programming | interpreted | ci_executed | `escript fehavaxe.erl` |
-| F* | programming | syntax_only | not_ci_executed | `-` |
-| F# | programming | compiled | ci_executed | `cd languages/fsharp && dotnet fsi towe.fs` |
-| Factor | programming | interpreted | not_ci_executed | `factor mevuni.factor` |
-| Fennel | programming | interpreted | not_ci_executed | `fennel hamyne.fnl` |
-| fish | programming | interpreted | not_ci_executed | `fish dapaxixo.fish` |
-| Flix | programming | syntax_only | not_ci_executed | `-` |
-| Forth | programming | interpreted | ci_executed | `gforth myrajy.fth -e bye` |
-| Fortran | programming | compiled | ci_executed | `gfortran vebu.f90 -o /tmp/hello_f90 && /tmp/hello_f90` |
-| Futhark | programming | interpreted | not_ci_executed | `futhark pagodo.fut` |
-| GAML | programming | syntax_only | not_ci_executed | `-` |
-| GDScript | programming | interpreted | not_ci_executed | `godot vuna.gd` |
-| Gleam | programming | compiled | not_ci_executed | `-` |
-| Go | programming | compiled | ci_executed | `go run mybi.go` |
-| Golo | programming | syntax_only | not_ci_executed | `-` |
-| Gosu | programming | syntax_only | not_ci_executed | `-` |
-| Groovy | programming | interpreted | ci_executed | `groovy xixaha.groovy` |
-| Hack | programming | transpiled | not_ci_executed | `-` |
-| Haskell | programming | interpreted | ci_executed | `runghc wivu.hs` |
-| Haxe | programming | compiled | not_ci_executed | `-` |
-| HCL | programming | syntax_only | not_ci_executed | `-` |
-| HiveQL | programming | syntax_only | not_ci_executed | `-` |
-| HolyC | programming | syntax_only | not_ci_executed | `-` |
-| HTML | markup | library_only | not_ci_executed | `-` |
-| Hy | programming | interpreted | not_ci_executed | `hy hunoko.hy` |
-| IDL | programming | syntax_only | not_ci_executed | `-` |
-| Idris | programming | interpreted | not_ci_executed | `idris zevazeke.idr` |
-| Inform 7 | programming | syntax_only | not_ci_executed | `-` |
-| Io | programming | interpreted | not_ci_executed | `io sogosavy.io` |
-| J | programming | interpreted | not_ci_executed | `jconsole haryka.ijs` |
-| Janet | programming | interpreted | not_ci_executed | `janet ryzaju.janet` |
-| Java | programming | compiled | ci_executed | `java fasegu.java` |
-| JavaScript | programming | interpreted | ci_executed | `node habame.js` |
-| JSONiq | programming | syntax_only | not_ci_executed | `-` |
-| Julia | programming | interpreted | ci_executed | `julia lili.jl` |
-| Just | programming | syntax_only | not_ci_executed | `-` |
-| Kotlin | programming | compiled | not_ci_executed | `-` |
-| Lean | programming | syntax_only | not_ci_executed | `-` |
-| LilyPond | programming | syntax_only | not_ci_executed | `-` |
-| Literate Haskell | programming | syntax_only | not_ci_executed | `-` |
-| LiveScript | programming | interpreted | not_ci_executed | `livescript joni.ls` |
-| LLVM | programming | syntax_only | not_ci_executed | `-` |
-| Logtalk | programming | syntax_only | not_ci_executed | `-` |
-| LOLCODE | programming | syntax_only | not_ci_executed | `-` |
-| Lua | programming | interpreted | ci_executed | `lua5.4 puzi.lua` |
-| M4 | programming | syntax_only | not_ci_executed | `-` |
-| Mako | programming | transpiled | not_ci_executed | `-` |
-| Markdown | prose | library_only | not_ci_executed | `-` |
-| MATLAB | programming | interpreted | not_ci_executed | `octave tucidy.m` |
-| Mercury | programming | interpreted | not_ci_executed | `mmc lygega.m` |
-| Meson | programming | syntax_only | not_ci_executed | `-` |
-| Metal | programming | syntax_only | not_ci_executed | `-` |
-| Modelica | programming | syntax_only | not_ci_executed | `-` |
-| Modula-2 | programming | syntax_only | not_ci_executed | `-` |
-| Modula-3 | programming | syntax_only | not_ci_executed | `-` |
-| Motoko | programming | syntax_only | not_ci_executed | `-` |
-| MQL4 | programming | syntax_only | not_ci_executed | `-` |
-| MQL5 | programming | syntax_only | not_ci_executed | `-` |
-| Nemerle | programming | syntax_only | not_ci_executed | `-` |
-| NetLogo | programming | interpreted | not_ci_executed | `netlogo lupy.nlogo` |
-| NewLisp | programming | interpreted | not_ci_executed | `newlisp juse.nl` |
-| Nextflow | programming | interpreted | not_ci_executed | `nextflow vecofexi.nf` |
-| Nim | programming | compiled | not_ci_executed | `-` |
-| Nix | programming | syntax_only | not_ci_executed | `-` |
-| Nu | programming | syntax_only | not_ci_executed | `-` |
-| Objective-C | programming | syntax_only | not_ci_executed | `-` |
-| Objective-C++ | programming | syntax_only | not_ci_executed | `-` |
-| OCaml | programming | interpreted | ci_executed | `ocaml wokati.ml` |
-| Odin | programming | interpreted | not_ci_executed | `odin hecybe.odin` |
-| Opa | programming | transpiled | not_ci_executed | `-` |
-| OpenQASM | programming | syntax_only | not_ci_executed | `-` |
-| OpenSCAD | programming | interpreted | not_ci_executed | `openscad tavuxy.scad` |
-| Oz | programming | syntax_only | not_ci_executed | `-` |
-| Pascal | programming | compiled | ci_executed | `fpc zowimoby.pas -o/tmp/hello_pas >/dev/null && /tmp/hello_pas` |
-| Perl | programming | interpreted | ci_executed | `perl vokiqo.pl` |
-| PHP | programming | interpreted | ci_executed | `php rede.php` |
-| Pony | programming | interpreted | not_ci_executed | `pony tufyno.pony` |
-| PowerShell | programming | interpreted | not_ci_executed | `pwsh cevanati.ps1` |
-| Processing | programming | syntax_only | not_ci_executed | `-` |
-| Prolog | programming | interpreted | ci_executed | `swipl -q -g "main" -t halt -f wucomyto.pro` |
-| Puppet | programming | interpreted | not_ci_executed | `puppet syga.pp` |
-| PureBasic | programming | syntax_only | not_ci_executed | `-` |
-| PureScript | programming | interpreted | not_ci_executed | `purs kawe.purs` |
-| Python | programming | interpreted | ci_executed | `python3 qegyva.py` |
-| Q# | programming | syntax_only | not_ci_executed | `-` |
-| QML | programming | syntax_only | not_ci_executed | `-` |
-| R | programming | interpreted | ci_executed | `Rscript wedovu.R` |
-| Racket | programming | interpreted | ci_executed | `racket zonaqewa.rkt` |
-| Ragel | programming | syntax_only | not_ci_executed | `-` |
-| Raku | programming | compiled | not_ci_executed | `-` |
-| Rascal | programming | syntax_only | not_ci_executed | `-` |
-| Reason | programming | transpiled | not_ci_executed | `-` |
-| Red | programming | interpreted | not_ci_executed | `red sabytegu.red` |
-| ReScript | programming | transpiled | not_ci_executed | `-` |
-| REXX | programming | interpreted | not_ci_executed | `rexx kedebo.rexx` |
-| Ring | programming | interpreted | not_ci_executed | `ring rimypi.ring` |
-| RobotFramework | programming | syntax_only | not_ci_executed | `-` |
-| Roc | programming | syntax_only | not_ci_executed | `-` |
-| Ruby | programming | interpreted | ci_executed | `ruby dofiro.rb` |
-| Rust | programming | compiled | ci_executed | `rustc hotohaju.rs -o /tmp/hello_rs && /tmp/hello_rs` |
-| SAS | programming | interpreted | not_ci_executed | `sas xegiji.sas` |
-| Scala | programming | compiled | not_ci_executed | `-` |
-| Scheme | programming | interpreted | ci_executed | `guile mupu.scm` |
-| Scilab | programming | interpreted | not_ci_executed | `scilab qasyte.sci` |
-| sed | programming | interpreted | ci_executed | `echo foo | sed -f fapene.sed` |
-| Self | programming | syntax_only | not_ci_executed | `-` |
-| Shell | programming | interpreted | ci_executed | `bash bicu.sh` |
-| Slice | programming | syntax_only | not_ci_executed | `-` |
-| Smalltalk | programming | interpreted | not_ci_executed | `gst mabi.st` |
-| Smarty | programming | transpiled | not_ci_executed | `-` |
-| Smithy | programming | syntax_only | not_ci_executed | `-` |
-| Snakemake | programming | interpreted | not_ci_executed | `snakemake pohohowa.smk` |
-| Solidity | programming | interpreted | not_ci_executed | `solc setafidy.sol` |
-| SourcePawn | programming | syntax_only | not_ci_executed | `-` |
-| SQF | programming | syntax_only | not_ci_executed | `-` |
-| SQL | data | interpreted | ci_executed | `sqlite3 :memory: < jesotu.sql` |
-| Squirrel | programming | interpreted | not_ci_executed | `squirrel jyhu.nut` |
-| Stan | programming | syntax_only | not_ci_executed | `-` |
-| Starlark | programming | syntax_only | not_ci_executed | `-` |
-| Stata | programming | interpreted | not_ci_executed | `stata tysabi.do` |
-| SuperCollider | programming | syntax_only | not_ci_executed | `-` |
-| Swift | programming | compiled | not_ci_executed | `-` |
-| SystemVerilog | programming | interpreted | not_ci_executed | `iverilog tupazy.sv` |
-| Tcl | programming | interpreted | ci_executed | `tclsh bowo.tcl` |
-| Terra | programming | interpreted | not_ci_executed | `terra jime.t` |
-| Thrift | programming | syntax_only | not_ci_executed | `-` |
-| Turing | programming | syntax_only | not_ci_executed | `-` |
-| TypeScript | programming | interpreted | ci_executed | `npx --yes tsc fopi.ts && node fopi.js` |
-| UrWeb | programming | syntax_only | not_ci_executed | `-` |
-| V | programming | compiled | not_ci_executed | `-` |
-| Vala | programming | compiled | ci_executed | `valac viku.vala -o /tmp/hello_vala && /tmp/hello_vala` |
-| VBA | programming | syntax_only | not_ci_executed | `-` |
-| VHDL | programming | syntax_only | not_ci_executed | `-` |
-| Visual Basic .NET | programming | compiled | ci_executed | `cd languages/vb && dotnet run` |
-| WebIDL | programming | syntax_only | not_ci_executed | `-` |
-| Wren | programming | syntax_only | not_ci_executed | `-` |
-| X10 | programming | syntax_only | not_ci_executed | `-` |
-| XQuery | programming | syntax_only | not_ci_executed | `-` |
-| XSLT | programming | syntax_only | not_ci_executed | `-` |
-| YARA | programming | interpreted | not_ci_executed | `yara gupywy.yar` |
-| Zeek | programming | interpreted | not_ci_executed | `zeek gysiqu.zeek` |
-| Zephir | programming | syntax_only | not_ci_executed | `-` |
-| Zig | programming | compiled | not_ci_executed | `-` |
-| Zimpl | programming | syntax_only | not_ci_executed | `-` |
-
-## Languages WITHOUT executable examples (579)
-
-These have no template with genuine, real source code in the database. They are recorded here rather than shipped a comment pretending to be code.
-
-- **2-Dimensional Array** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ABNF** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ActionScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Adblock Filter List** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Adobe Font Metrics** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Agda** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **AGS Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Alpine Abuild** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Altium Designer** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **AngelScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Answer Set Programming** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ant Build System** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Antlers** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ApacheConf** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **API Blueprint** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Apollo Guidance Computer** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Arc** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **AsciiDoc** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ASL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ASN.1** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Astro** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Avro IDL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **B (Formal Method)** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **BBCode** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Beef** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **BibTeX** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **BibTeX Style** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Bikeshed** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **BIRD2** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Blade** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Blueprint** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Bluespec BH** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **BrighterScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Browserslist** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Bru** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **BuildStream** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **C-ObjDump** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cabal Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Caddyfile** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cangjie** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Charity** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Checksums** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **CIL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Click** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Closure Templates** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cloud Firestore Security Rules** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Clue** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **CODEOWNERS** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **COLLADA** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **CoNLL-U** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cooklang** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cpp-ObjDump** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Creole** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **crontab** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **CSON** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Csound Document** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **CSV** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cue Sheet** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **cURL Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Curry** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **CWeb** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cycript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cylc** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Cypher** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **D-ObjDump** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **D2** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Darcs Patch** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Debian Package Control File** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **DenizenScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **desktop** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Diff** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **dircolors** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **DirectX 3D File** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **DM** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **DNS Zone** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Dogescript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Dotenv** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **DTrace** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **E** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **E-mail** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Eagle** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Earthly** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Easybuild** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **EBNF** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ecere Projects** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ecmarkup** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Edge** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **EditorConfig** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Edje Data Collection** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **edn** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **EJS** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Elvish Transcript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **EmberScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **EQ** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Euphoria** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Fancy** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Fantom** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Faust** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **FIGlet Font** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Filebench WML** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Filterscript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **FIRRTL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **FlatBuffers** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Fluent** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **FLUX** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Formatted** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Fortran Free Form** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **FreeBASIC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **FreeMarker** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Frege** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **G-code** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Game Maker Language** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GAMS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GAP** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GCC Machine Description** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GDB** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GDShader** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GEDCOM** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gemfile.lock** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gemini** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Genero 4gl** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Genero per** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Genie** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Genshi** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gentoo Ebuild** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gentoo Eclass** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gerber Image** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gettext Catalog** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gherkin** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Git Attributes** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Git Commit** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Git Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Git Revision List** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Glimmer JS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Glimmer TS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GLSL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Glyph** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Glyph Bitmap Distribution Format** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GN** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gno** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gnuplot** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Go Checksums** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Go Module** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Go Template** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Go Workspace** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Godot Resource** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Grace** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gradle** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Gradle Kotlin DSL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Grammatical Framework** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Graph Modeling Language** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GraphQL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Graphviz (DOT)** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Groovy Server Pages** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GSC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **GtkRC** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Haml** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Handlebars** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HAProxy** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Harbour** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Hare** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HIP** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HLSL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HOCON** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **hoon** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Hosts File** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HTML+ECR** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HTML+EEX** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HTML+ERB** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HTML+PHP** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HTML+Razor** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HTTP** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Hurl** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HXML** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **HyPhy** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **iCalendar** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ignore List** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **IGOR Pro** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **IL Assembly** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ImageJ Macro** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Imba** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ImHex Pattern Language** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **INI** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ink** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Inno Setup** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ioke** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **IRC log** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Isabelle** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Isabelle ROOT** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ISPC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jac** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jai** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JAR Manifest** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jasmin** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JASS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Java Properties** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Java Server Pages** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Java Template Engine** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JavaScript+ERB** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JCL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jest Snapshot** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JetBrains MPS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JFlex** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jinja** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jison** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jison Lex** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jolie** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **jq** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JSON** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JSON with Comments** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JSON5** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **JSONLD** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jsonnet** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Julia REPL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Jupyter Notebook** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Kaitai Struct** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KakouneScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KCL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KDL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KerboScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KFramework** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KiCad Layout** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KiCad Legacy Layout** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KiCad Schematic** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Kickstart** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Kit** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Koka** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KoLmafia ASH** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **KRL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Kusto** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **kvlang** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LabVIEW** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Lambdapi** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Langium** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Lark** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Lasso** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Latte** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Lean 4** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Leo** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Less** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Lex** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LFE** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LigoLANG** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Limbo** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Linear Programming** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Linker Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Linux Kernel Module** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Liquid** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Liquidsoap** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Literate Agda** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Literate CoffeeScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LiveCode Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Lobster** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Logos** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LookML** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LoomScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LSL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **LTspice Symbol** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Luau** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **M** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **M3U** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **M4Sugar** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Macaulay2** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Makefile** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Marko** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mask** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mathematical Programming System** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Maven POM** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Max** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MAXScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **mcfunction** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **mdsvex** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MDX** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mermaid** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MeTTa** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Microsoft Developer Studio Project** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Microsoft Visual Studio Solution** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MiniD** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MiniScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MiniYAML** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MiniZinc** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MiniZinc Data** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mint** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mirah** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **mIRC Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MLIR** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Module Management System** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mojo** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Monkey** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Monkey C** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Moocode** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MoonBit** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MoonScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Motorola 68K Assembly** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Move** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MTML** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **MUF** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **mupad** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Muse** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Mustache** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Myghty** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **nanorc** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nasal** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NASL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NCL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nearley** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NEON** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **nesC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NetLinx** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NetLinx+ERB** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nginx** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nickel** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ninja** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nit** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NMODL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Noir** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NPM Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NSIS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NumPy** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nunjucks** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Nushell** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **NWScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OASv2-json** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OASv2-yaml** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OASv3-json** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OASv3-yaml** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Oberon** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ObjDump** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Object Data Instance Notation** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Objective-J** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ObjectScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Omgrofl** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OMNeT++ MSG** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OMNeT++ NED** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ooc** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Opal** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Open Policy Agent** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenAPI Specification v2** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenAPI Specification v3** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenCL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenEdge ABL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenRC runscript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenStep Property List** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OpenType Feature File** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Option List** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Org** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OverpassQL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **OverPy** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ox** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Oxygene** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **P4** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pact** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pan** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Papyrus** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Parrot** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Parrot Assembly** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Parrot Internal Representation** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pawn** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PDDL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PEG.js** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pep8** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pic** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pickle** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PicoLisp** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PigLatin** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pike** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pip Requirements** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **pkg-config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pkl** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PlantUML** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PLpgSQL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PLSQL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pod** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pod 6** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PogoScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Polar** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Portugol** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PostCSS** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PostScript** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **POV-Ray SDL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Power Query** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **PowerBuilder** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Praat** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Prisma** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pro*C** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Procfile** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Proguard** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Promela** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Propeller Spin** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Protocol Buffer** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Protocol Buffer Text Format** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Public Key** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pug** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pure Data** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Pyret** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Python console** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Python traceback** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **q** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **QMake** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Qt Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Quake** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **QuakeC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **QuickBASIC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Quint** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RAML** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RAScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Raw token data** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RBS** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RDoc** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Readline Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **REALbasic** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ReasonLIGO** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Rebol** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Record Jar** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Redcode** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Redirect Rules** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Redscript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Regular Expression** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Ren'Py** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RenderScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **reStructuredText** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Rez** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Rich Text Format** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Riot** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RMarkdown** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Robots Exclusion Rules** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Rocq Prover** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Roff** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Roff Manpage** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RON** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ROS Interface** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Rouge** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RouterOS Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RPC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RPGLE** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RPM Spec** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **RUNOFF** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Sage** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Sail** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Salt** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Sass** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Scaml** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Scenic** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SCSS** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SELinux Policy** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ShaderLab** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ShellCheck Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ShellSession** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Shen** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Sieve** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Simple File Verification** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Singularity** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Slang** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Slash** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Slim** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Slint** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Smali** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SmPL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SMT** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Soong** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SPARQL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SpiceDB Schema** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Spline Font Database** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SQLPL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SRecode Template** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SSH Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Standard ML** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **STAR** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **STL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **STON** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **StringTemplate** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Stylus** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SubRip Text** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SugarSS** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SurrealQL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Survex data** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Svelte** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SVG** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Sway** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Sweave** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **SWIG** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tact** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Talon** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tape** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tcsh** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tea** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Teal** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **templ** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Terraform Template** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TeX** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Texinfo** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Text** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TextGrid** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Textile** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TextMate Properties** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TI Program** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TL-Verilog** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TLA** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TMDL** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Toit** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tolk** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TOML** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tor Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Tree-sitter Query** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TSPLIB data** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TSQL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TSV** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TSX** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Turtle** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Twig** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TXL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Type Language** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **TypeSpec** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Typst** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ucode** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Unified Parallel C** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Unity3D Asset** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Unix Assembly** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Uno** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **UnrealScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Untyped Plutus Core** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Valve Data Format** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **VBScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **vCard** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **VCL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Velocity Template Language** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Vento** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Verilog** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Verse** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Vim Help File** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Vim Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Vim Snippet** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Visual Basic 6.0** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Volt** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Vue** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Vyper** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Wavefront Material** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Wavefront Object** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **WDL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Web Ontology Language** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **WebAssembly** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **WebAssembly Interface Type** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **WebVTT** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Wget Config** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **WGSL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Whiley** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Wikitext** (prose) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Win32 Message File** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Windows Registry Entries** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **wisp** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Witcher Script** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Wolfram Language** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Wollok** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **World of Warcraft Addon Data** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **X BitMap** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **X Font Directory Index** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **X PixMap** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **xBase** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XC** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XCompose** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Xmake** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XML** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XML Property List** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Xojo** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Xonsh** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XPages** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XProc** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **XS** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Xtend** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Yacc** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **YAML** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **YANG** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **YASnippet** (markup) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Yul** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ZAP** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ZenScript** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **ZIL** (programming) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
-- **Zmodel** (data) — No genuine executable example in the language database (would require a comment-only placeholder — excluded).
+| 1C Enterprise | programming | template | not_ci_executed | `-` |
+| 2-Dimensional Array | data | document | source | `valid data document` |
+| 4D | programming | template | not_ci_executed | `-` |
+| ABAP | programming | template | not_ci_executed | `-` |
+| ABAP CDS | programming | template | not_ci_executed | `-` |
+| ABNF | data | document | source | `valid data document` |
+| ActionScript | programming | hello-world | source | `source (toolchain required)` |
+| Ada | programming | template | ci_executed | `gnatmake dyxyqogi.adb -o /tmp/hello_ada && /tmp/hello_ada` |
+| Adblock Filter List | data | document | source | `valid data document` |
+| Adobe Font Metrics | data | document | source | `valid data document` |
+| Agda | programming | hello-world | source | `source (toolchain required)` |
+| AGS Script | programming | hand-written | source | `source (toolchain required)` |
+| AIDL | programming | template | not_ci_executed | `-` |
+| Aiken | programming | template | not_ci_executed | `-` |
+| AL | programming | template | not_ci_executed | `-` |
+| Aleo | programming | template | not_ci_executed | `-` |
+| ALGOL | programming | template | not_ci_executed | `-` |
+| Alloy | programming | template | not_ci_executed | `-` |
+| Alpine Abuild | programming | generated | source | `source (toolchain required)` |
+| Altium Designer | data | document | source | `valid data document` |
+| AMPL | programming | template | not_ci_executed | `ampl labuwoli.ampl` |
+| AngelScript | programming | hello-world | source | `source (toolchain required)` |
+| Answer Set Programming | programming | hand-written | source | `source (toolchain required)` |
+| Ant Build System | data | document | source | `valid data document` |
+| Antlers | markup | document | source | `valid markup document` |
+| ANTLR | programming | template | not_ci_executed | `-` |
+| ApacheConf | data | document | source | `valid data document` |
+| Apex | programming | template | not_ci_executed | `-` |
+| API Blueprint | markup | document | source | `valid markup document` |
+| APL | programming | template | not_ci_executed | `-` |
+| Apollo Guidance Computer | programming | hand-written | source | `source (toolchain required)` |
+| AppleScript | programming | template | not_ci_executed | `-` |
+| Arc | programming | hello-world | source | `source (toolchain required)` |
+| AsciiDoc | prose | document | source | `valid prose document` |
+| ASL | programming | generated | source | `source (toolchain required)` |
+| ASN.1 | data | document | source | `valid data document` |
+| ASP.NET | programming | template | not_ci_executed | `-` |
+| AspectJ | programming | template | not_ci_executed | `-` |
+| Assembly | programming | template | not_ci_executed | `-` |
+| Astro | markup | document | source | `valid markup document` |
+| Asymptote | programming | template | not_ci_executed | `asy kusadu.asy` |
+| ATS | programming | template | not_ci_executed | `patscc sanasa.dats` |
+| Augeas | programming | template | not_ci_executed | `-` |
+| AutoHotkey | programming | template | not_ci_executed | `-` |
+| AutoIt | programming | template | not_ci_executed | `-` |
+| Avro IDL | data | document | source | `valid data document` |
+| Awk | programming | template | ci_executed | `awk -f pegy.awk /dev/null` |
+| B (Formal Method) | programming | hand-written | source | `source (toolchain required)` |
+| B4X | programming | template | not_ci_executed | `-` |
+| Ballerina | programming | template | not_ci_executed | `-` |
+| BAML | programming | template | not_ci_executed | `-` |
+| BASIC | programming | template | not_ci_executed | `-` |
+| Batchfile | programming | template | not_ci_executed | `cmd vytaza.bat` |
+| BBCode | markup | document | source | `valid markup document` |
+| Beef | programming | hello-world | source | `source (toolchain required)` |
+| Befunge | programming | template | not_ci_executed | `-` |
+| Berry | programming | template | not_ci_executed | `-` |
+| BibTeX | markup | document | source | `valid markup document` |
+| BibTeX Style | programming | hand-written | source | `source (toolchain required)` |
+| Bicep | programming | template | not_ci_executed | `-` |
+| Bikeshed | markup | document | source | `valid markup document` |
+| BIRD2 | data | document | source | `valid data document` |
+| Bison | programming | template | not_ci_executed | `-` |
+| BitBake | programming | template | not_ci_executed | `-` |
+| Blade | markup | document | source | `valid markup document` |
+| BlitzBasic | programming | template | not_ci_executed | `-` |
+| BlitzMax | programming | template | not_ci_executed | `-` |
+| Blueprint | markup | document | source | `valid markup document` |
+| Bluespec | programming | template | not_ci_executed | `-` |
+| Bluespec BH | programming | hand-written | source | `source (toolchain required)` |
+| Boo | programming | template | not_ci_executed | `-` |
+| Boogie | programming | template | not_ci_executed | `-` |
+| BQN | programming | template | not_ci_executed | `-` |
+| Brainfuck | programming | template | ci_executed | `python3 tools/bf.py hello.bf` |
+| BrighterScript | programming | hand-written | source | `source (toolchain required)` |
+| Brightscript | programming | template | not_ci_executed | `-` |
+| Browserslist | data | document | source | `valid data document` |
+| Bru | markup | document | source | `valid markup document` |
+| BuildStream | data | document | source | `valid data document` |
+| C | programming | template | ci_executed | `gcc vuduhi.c -o /tmp/hello_c && /tmp/hello_c` |
+| C-ObjDump | data | document | source | `valid data document` |
+| C# | programming | template | ci_executed | `cd languages/csharp && dotnet run` |
+| C++ | programming | template | ci_executed | `g++ tolu.cpp -o /tmp/hello_cpp && /tmp/hello_cpp` |
+| C2hs Haskell | programming | template | not_ci_executed | `-` |
+| C3 | programming | template | not_ci_executed | `c3c vakecalu.c3` |
+| Cabal Config | data | document | source | `valid data document` |
+| Caddyfile | data | document | source | `valid data document` |
+| Cadence | programming | template | not_ci_executed | `-` |
+| Cairo | programming | template | not_ci_executed | `-` |
+| Cairo Zero | programming | template | not_ci_executed | `-` |
+| CameLIGO | programming | template | not_ci_executed | `-` |
+| Cangjie | programming | hand-written | source | `source (toolchain required)` |
+| CAP CDS | programming | template | not_ci_executed | `-` |
+| Cap'n Proto | programming | template | not_ci_executed | `-` |
+| Carbon | programming | template | not_ci_executed | `-` |
+| CartoCSS | programming | template | not_ci_executed | `-` |
+| Ceylon | programming | template | not_ci_executed | `ceylon myqodi.ceylon` |
+| Chapel | programming | template | not_ci_executed | `chpl zosu.chpl` |
+| Charity | programming | generated | source | `source (toolchain required)` |
+| Checksums | data | document | source | `valid data document` |
+| ChucK | programming | template | not_ci_executed | `-` |
+| CIL | data | hello-world | source | `source (toolchain required)` |
+| Circom | programming | template | not_ci_executed | `-` |
+| Cirru | programming | template | not_ci_executed | `-` |
+| Clarion | programming | template | not_ci_executed | `-` |
+| Clarity | programming | template | not_ci_executed | `-` |
+| Classic ASP | programming | template | not_ci_executed | `-` |
+| Clean | programming | template | not_ci_executed | `clm nojaqa.icl` |
+| Click | programming | generated | source | `source (toolchain required)` |
+| CLIPS | programming | template | not_ci_executed | `-` |
+| Clojure | programming | template | not_ci_executed | `-` |
+| Closure Templates | markup | document | source | `valid markup document` |
+| Cloud Firestore Security Rules | data | document | source | `valid data document` |
+| Clue | programming | generated | source | `source (toolchain required)` |
+| CMake | programming | template | not_ci_executed | `-` |
+| COBOL | programming | template | not_ci_executed | `-` |
+| CODEOWNERS | data | document | source | `valid data document` |
+| CodeQL | programming | template | not_ci_executed | `-` |
+| CoffeeScript | programming | template | not_ci_executed | `coffee vimo.coffee` |
+| ColdFusion | programming | template | not_ci_executed | `-` |
+| ColdFusion CFC | programming | template | not_ci_executed | `-` |
+| COLLADA | data | document | source | `valid data document` |
+| Common Lisp | programming | template | ci_executed | `clisp dikifihu.lisp` |
+| Common Workflow Language | programming | template | not_ci_executed | `-` |
+| Component Pascal | programming | template | not_ci_executed | `-` |
+| CoNLL-U | data | document | source | `valid data document` |
+| Cooklang | markup | document | source | `valid markup document` |
+| Cool | programming | template | not_ci_executed | `-` |
+| Cpp-ObjDump | data | document | source | `valid data document` |
+| CQL | programming | template | not_ci_executed | `-` |
+| Creole | prose | document | source | `valid prose document` |
+| crontab | data | document | source | `valid data document` |
+| Crystal | programming | template | not_ci_executed | `-` |
+| CSON | data | hello-world | source | `source (toolchain required)` |
+| Csound | programming | template | not_ci_executed | `csound qusi.orc` |
+| Csound Document | programming | generated | source | `source (toolchain required)` |
+| Csound Score | programming | template | not_ci_executed | `-` |
+| CSS | markup | template | not_ci_executed | `-` |
+| CSV | data | document | source | `valid data document` |
+| Cuda | programming | template | not_ci_executed | `-` |
+| CUE | programming | template | not_ci_executed | `-` |
+| Cue Sheet | data | document | source | `valid data document` |
+| cURL Config | data | document | source | `valid data document` |
+| Curry | programming | hello-world | source | `source (toolchain required)` |
+| CWeb | programming | hand-written | source | `source (toolchain required)` |
+| Cycript | programming | hand-written | source | `source (toolchain required)` |
+| Cylc | data | document | source | `valid data document` |
+| Cypher | programming | hand-written | source | `source (toolchain required)` |
+| Cython | programming | template | not_ci_executed | `cython tefu.pyx` |
+| D | programming | template | not_ci_executed | `-` |
+| D-ObjDump | data | document | source | `valid data document` |
+| D2 | markup | document | source | `valid markup document` |
+| Dafny | programming | template | not_ci_executed | `dafny kipi.dfy` |
+| Darcs Patch | data | document | source | `valid data document` |
+| Dart | programming | template | not_ci_executed | `dart qisapy.dart` |
+| Daslang | programming | template | not_ci_executed | `-` |
+| DataWeave | programming | template | not_ci_executed | `-` |
+| Debian Package Control File | data | document | source | `valid data document` |
+| DenizenScript | programming | generated | source | `source (toolchain required)` |
+| desktop | data | document | source | `valid data document` |
+| Dhall | programming | template | not_ci_executed | `-` |
+| Diff | data | document | source | `valid data document` |
+| DIGITAL Command Language | programming | template | not_ci_executed | `-` |
+| dircolors | data | document | source | `valid data document` |
+| DirectX 3D File | data | document | source | `valid data document` |
+| DM | programming | hand-written | source | `source (toolchain required)` |
+| DNS Zone | data | document | source | `valid data document` |
+| Dockerfile | programming | template | not_ci_executed | `docker wozuny.dockerfile` |
+| Dogescript | programming | hello-world | source | `source (toolchain required)` |
+| Dotenv | data | document | source | `valid data document` |
+| DTrace | programming | hello-world | source | `source (toolchain required)` |
+| Dune | programming | template | not_ci_executed | `-` |
+| Dylan | programming | template | not_ci_executed | `-` |
+| E | programming | hello-world | source | `source (toolchain required)` |
+| E-mail | data | document | source | `valid data document` |
+| Eagle | data | document | source | `valid data document` |
+| Earthly | programming | hand-written | source | `source (toolchain required)` |
+| Easybuild | data | document | source | `valid data document` |
+| EBNF | data | document | source | `valid data document` |
+| eC | programming | template | not_ci_executed | `-` |
+| Ecere Projects | data | document | source | `valid data document` |
+| ECL | programming | template | not_ci_executed | `-` |
+| ECLiPSe | programming | template | not_ci_executed | `-` |
+| Ecmarkup | markup | document | source | `valid markup document` |
+| Edge | markup | document | source | `valid markup document` |
+| EdgeQL | programming | template | not_ci_executed | `-` |
+| EditorConfig | data | document | source | `valid data document` |
+| Edje Data Collection | data | document | source | `valid data document` |
+| edn | data | document | source | `valid data document` |
+| Eiffel | programming | template | not_ci_executed | `-` |
+| EJS | markup | document | source | `valid markup document` |
+| Elixir | programming | template | ci_executed | `elixir rebi.ex` |
+| Elm | programming | template | not_ci_executed | `-` |
+| Elvish | programming | template | not_ci_executed | `elvish rawima.elv` |
+| Elvish Transcript | programming | generated | source | `source (toolchain required)` |
+| Emacs Lisp | programming | template | not_ci_executed | `emacs --batch wukehy.el` |
+| EmberScript | programming | generated | source | `source (toolchain required)` |
+| EQ | programming | generated | source | `source (toolchain required)` |
+| Erlang | programming | template | ci_executed | `escript zali.erl` |
+| Euphoria | programming | hello-world | source | `source (toolchain required)` |
+| F* | programming | template | not_ci_executed | `-` |
+| F# | programming | template | ci_executed | `cd languages/fsharp && dotnet fsi kyxody.fs` |
+| Factor | programming | template | not_ci_executed | `factor zycu.factor` |
+| Fancy | programming | hello-world | source | `source (toolchain required)` |
+| Fantom | programming | hello-world | source | `source (toolchain required)` |
+| Faust | programming | hand-written | source | `source (toolchain required)` |
+| Fennel | programming | template | not_ci_executed | `fennel qacygyba.fnl` |
+| FIGlet Font | data | document | source | `valid data document` |
+| Filebench WML | programming | generated | source | `source (toolchain required)` |
+| Filterscript | programming | hand-written | source | `source (toolchain required)` |
+| FIRRTL | programming | generated | source | `source (toolchain required)` |
+| fish | programming | template | not_ci_executed | `fish syciri.fish` |
+| FlatBuffers | data | document | source | `valid data document` |
+| Flix | programming | template | not_ci_executed | `-` |
+| Fluent | programming | generated | source | `source (toolchain required)` |
+| FLUX | programming | generated | source | `source (toolchain required)` |
+| Formatted | data | document | source | `valid data document` |
+| Forth | programming | template | ci_executed | `gforth tykuceki.fth -e bye` |
+| Fortran | programming | template | ci_executed | `gfortran kyqylo.f90 -o /tmp/hello_f90 && /tmp/hello_f90` |
+| Fortran Free Form | programming | hand-written | source | `source (toolchain required)` |
+| FreeBASIC | programming | hand-written | source | `source (toolchain required)` |
+| FreeMarker | programming | hand-written | source | `source (toolchain required)` |
+| Frege | programming | hand-written | source | `source (toolchain required)` |
+| Futhark | programming | template | not_ci_executed | `futhark xute.fut` |
+| G-code | programming | hand-written | source | `source (toolchain required)` |
+| Game Maker Language | programming | hand-written | source | `source (toolchain required)` |
+| GAML | programming | template | not_ci_executed | `-` |
+| GAMS | programming | hand-written | source | `source (toolchain required)` |
+| GAP | programming | hand-written | source | `source (toolchain required)` |
+| GCC Machine Description | programming | generated | source | `source (toolchain required)` |
+| GDB | programming | hand-written | source | `source (toolchain required)` |
+| GDScript | programming | template | not_ci_executed | `godot xugigo.gd` |
+| GDShader | programming | hand-written | source | `source (toolchain required)` |
+| GEDCOM | data | document | source | `valid data document` |
+| Gemfile.lock | data | document | source | `valid data document` |
+| Gemini | prose | document | source | `valid prose document` |
+| Genero 4gl | programming | generated | source | `source (toolchain required)` |
+| Genero per | markup | document | source | `valid markup document` |
+| Genie | programming | hello-world | source | `source (toolchain required)` |
+| Genshi | programming | generated | source | `source (toolchain required)` |
+| Gentoo Ebuild | programming | hand-written | source | `source (toolchain required)` |
+| Gentoo Eclass | programming | hand-written | source | `source (toolchain required)` |
+| Gerber Image | data | document | source | `valid data document` |
+| Gettext Catalog | prose | document | source | `valid prose document` |
+| Gherkin | programming | hand-written | source | `source (toolchain required)` |
+| Git Attributes | data | document | source | `valid data document` |
+| Git Commit | data | document | source | `valid data document` |
+| Git Config | data | document | source | `valid data document` |
+| Git Revision List | data | document | source | `valid data document` |
+| Gleam | programming | template | not_ci_executed | `-` |
+| Glimmer JS | programming | generated | source | `source (toolchain required)` |
+| Glimmer TS | programming | generated | source | `source (toolchain required)` |
+| GLSL | programming | hand-written | source | `source (toolchain required)` |
+| Glyph | programming | generated | source | `source (toolchain required)` |
+| Glyph Bitmap Distribution Format | data | document | source | `valid data document` |
+| GN | data | document | source | `valid data document` |
+| Gno | programming | generated | source | `source (toolchain required)` |
+| Gnuplot | programming | hand-written | source | `source (toolchain required)` |
+| Go | programming | template | ci_executed | `go run bagaxy.go` |
+| Go Checksums | data | document | source | `valid data document` |
+| Go Module | data | document | source | `valid data document` |
+| Go Template | markup | document | source | `valid markup document` |
+| Go Workspace | data | document | source | `valid data document` |
+| Godot Resource | data | document | source | `valid data document` |
+| Golo | programming | template | not_ci_executed | `-` |
+| Gosu | programming | template | not_ci_executed | `-` |
+| Grace | programming | generated | source | `source (toolchain required)` |
+| Gradle | data | document | source | `valid data document` |
+| Gradle Kotlin DSL | data | document | source | `valid data document` |
+| Grammatical Framework | programming | generated | source | `source (toolchain required)` |
+| Graph Modeling Language | data | document | source | `valid data document` |
+| GraphQL | data | hello-world | source | `source (toolchain required)` |
+| Graphviz (DOT) | data | document | source | `valid data document` |
+| Groovy | programming | template | ci_executed | `groovy leroguji.groovy` |
+| Groovy Server Pages | programming | hand-written | source | `source (toolchain required)` |
+| GSC | programming | hand-written | source | `source (toolchain required)` |
+| GtkRC | data | document | source | `valid data document` |
+| Hack | programming | template | not_ci_executed | `-` |
+| Haml | markup | hello-world | source | `source (toolchain required)` |
+| Handlebars | markup | document | source | `valid markup document` |
+| HAProxy | data | document | source | `valid data document` |
+| Harbour | programming | hello-world | source | `source (toolchain required)` |
+| Hare | programming | hello-world | source | `source (toolchain required)` |
+| Haskell | programming | template | ci_executed | `runghc jyfi.hs` |
+| Haxe | programming | template | not_ci_executed | `-` |
+| HCL | programming | template | not_ci_executed | `-` |
+| HIP | programming | hand-written | source | `source (toolchain required)` |
+| HiveQL | programming | template | not_ci_executed | `-` |
+| HLSL | programming | hand-written | source | `source (toolchain required)` |
+| HOCON | data | document | source | `valid data document` |
+| HolyC | programming | template | not_ci_executed | `-` |
+| hoon | programming | generated | source | `source (toolchain required)` |
+| Hosts File | data | document | source | `valid data document` |
+| HTML | markup | template | not_ci_executed | `-` |
+| HTML+ECR | markup | document | source | `valid markup document` |
+| HTML+EEX | markup | document | source | `valid markup document` |
+| HTML+ERB | markup | document | source | `valid markup document` |
+| HTML+PHP | markup | document | source | `valid markup document` |
+| HTML+Razor | markup | document | source | `valid markup document` |
+| HTTP | data | hello-world | source | `source (toolchain required)` |
+| Hurl | programming | hand-written | source | `source (toolchain required)` |
+| HXML | data | document | source | `valid data document` |
+| Hy | programming | template | not_ci_executed | `hy zusece.hy` |
+| HyPhy | programming | generated | source | `source (toolchain required)` |
+| iCalendar | data | document | source | `valid data document` |
+| IDL | programming | template | not_ci_executed | `-` |
+| Idris | programming | template | not_ci_executed | `idris zarocipe.idr` |
+| Ignore List | data | document | source | `valid data document` |
+| IGOR Pro | programming | hand-written | source | `source (toolchain required)` |
+| IL Assembly | programming | hand-written | source | `source (toolchain required)` |
+| ImageJ Macro | programming | hand-written | source | `source (toolchain required)` |
+| Imba | programming | hand-written | source | `source (toolchain required)` |
+| ImHex Pattern Language | programming | generated | source | `source (toolchain required)` |
+| Inform 7 | programming | template | not_ci_executed | `-` |
+| INI | data | document | source | `valid data document` |
+| Ink | programming | hello-world | source | `source (toolchain required)` |
+| Inno Setup | programming | hand-written | source | `source (toolchain required)` |
+| Io | programming | template | not_ci_executed | `io varohy.io` |
+| Ioke | programming | hello-world | source | `source (toolchain required)` |
+| IRC log | data | document | source | `valid data document` |
+| Isabelle | programming | hand-written | source | `source (toolchain required)` |
+| Isabelle ROOT | programming | hand-written | source | `source (toolchain required)` |
+| ISPC | programming | hand-written | source | `source (toolchain required)` |
+| J | programming | template | not_ci_executed | `jconsole qami.ijs` |
+| Jac | programming | generated | source | `source (toolchain required)` |
+| Jai | programming | hello-world | source | `source (toolchain required)` |
+| Janet | programming | template | not_ci_executed | `janet zyzi.janet` |
+| JAR Manifest | data | document | source | `valid data document` |
+| Jasmin | programming | hello-world | source | `source (toolchain required)` |
+| JASS | programming | hand-written | source | `source (toolchain required)` |
+| Java | programming | template | ci_executed | `java pumitu.java` |
+| Java Properties | data | document | source | `valid data document` |
+| Java Server Pages | programming | hand-written | source | `source (toolchain required)` |
+| Java Template Engine | programming | generated | source | `source (toolchain required)` |
+| JavaScript | programming | template | ci_executed | `node tuzu.js` |
+| JavaScript+ERB | programming | hand-written | source | `source (toolchain required)` |
+| JCL | programming | hand-written | source | `source (toolchain required)` |
+| Jest Snapshot | data | document | source | `valid data document` |
+| JetBrains MPS | programming | generated | source | `source (toolchain required)` |
+| JFlex | programming | hand-written | source | `source (toolchain required)` |
+| Jinja | markup | document | source | `valid markup document` |
+| Jison | programming | hand-written | source | `source (toolchain required)` |
+| Jison Lex | programming | hand-written | source | `source (toolchain required)` |
+| Jolie | programming | hello-world | source | `source (toolchain required)` |
+| jq | programming | hand-written | source | `source (toolchain required)` |
+| JSON | data | hello-world | source | `source (toolchain required)` |
+| JSON with Comments | data | document | source | `valid data document` |
+| JSON5 | data | document | source | `valid data document` |
+| JSONiq | programming | template | not_ci_executed | `-` |
+| JSONLD | data | document | source | `valid data document` |
+| Jsonnet | programming | hand-written | source | `source (toolchain required)` |
+| Julia | programming | template | ci_executed | `julia hafo.jl` |
+| Julia REPL | programming | hand-written | source | `source (toolchain required)` |
+| Jupyter Notebook | markup | document | source | `valid markup document` |
+| Just | programming | template | not_ci_executed | `-` |
+| Kaitai Struct | programming | hand-written | source | `source (toolchain required)` |
+| KakouneScript | programming | hand-written | source | `source (toolchain required)` |
+| KCL | programming | hand-written | source | `source (toolchain required)` |
+| KDL | data | document | source | `valid data document` |
+| KerboScript | programming | hand-written | source | `source (toolchain required)` |
+| KFramework | programming | generated | source | `source (toolchain required)` |
+| KiCad Layout | data | document | source | `valid data document` |
+| KiCad Legacy Layout | data | document | source | `valid data document` |
+| KiCad Schematic | data | document | source | `valid data document` |
+| Kickstart | data | document | source | `valid data document` |
+| Kit | markup | document | source | `valid markup document` |
+| Koka | programming | hello-world | source | `source (toolchain required)` |
+| KoLmafia ASH | programming | hand-written | source | `source (toolchain required)` |
+| Kotlin | programming | template | not_ci_executed | `-` |
+| KRL | programming | generated | source | `source (toolchain required)` |
+| Kusto | data | document | source | `valid data document` |
+| kvlang | markup | document | source | `valid markup document` |
+| LabVIEW | programming | generated | source | `source (toolchain required)` |
+| Lambdapi | programming | generated | source | `source (toolchain required)` |
+| Langium | programming | generated | source | `source (toolchain required)` |
+| Lark | data | document | source | `valid data document` |
+| Lasso | programming | hand-written | source | `source (toolchain required)` |
+| Latte | markup | document | source | `valid markup document` |
+| Lean | programming | template | not_ci_executed | `-` |
+| Lean 4 | programming | hand-written | source | `source (toolchain required)` |
+| Leo | programming | generated | source | `source (toolchain required)` |
+| Less | markup | hello-world | source | `source (toolchain required)` |
+| Lex | programming | hand-written | source | `source (toolchain required)` |
+| LFE | programming | hand-written | source | `source (toolchain required)` |
+| LigoLANG | programming | generated | source | `source (toolchain required)` |
+| LilyPond | programming | template | not_ci_executed | `-` |
+| Limbo | programming | hello-world | source | `source (toolchain required)` |
+| Linear Programming | programming | hand-written | source | `source (toolchain required)` |
+| Linker Script | programming | hand-written | source | `source (toolchain required)` |
+| Linux Kernel Module | data | document | source | `valid data document` |
+| Liquid | markup | document | source | `valid markup document` |
+| Liquidsoap | programming | generated | source | `source (toolchain required)` |
+| Literate Agda | programming | generated | source | `source (toolchain required)` |
+| Literate CoffeeScript | programming | hand-written | source | `source (toolchain required)` |
+| Literate Haskell | programming | template | not_ci_executed | `-` |
+| LiveCode Script | programming | hand-written | source | `source (toolchain required)` |
+| LiveScript | programming | template | not_ci_executed | `livescript nuvuzuty.ls` |
+| LLVM | programming | template | not_ci_executed | `-` |
+| Lobster | programming | hand-written | source | `source (toolchain required)` |
+| Logos | programming | generated | source | `source (toolchain required)` |
+| Logtalk | programming | template | not_ci_executed | `-` |
+| LOLCODE | programming | template | not_ci_executed | `-` |
+| LookML | programming | hand-written | source | `source (toolchain required)` |
+| LoomScript | programming | generated | source | `source (toolchain required)` |
+| LSL | programming | hello-world | source | `source (toolchain required)` |
+| LTspice Symbol | data | document | source | `valid data document` |
+| Lua | programming | template | ci_executed | `lua5.4 satoja.lua` |
+| Luau | programming | hello-world | source | `source (toolchain required)` |
+| M | programming | hand-written | source | `source (toolchain required)` |
+| M3U | data | document | source | `valid data document` |
+| M4 | programming | template | not_ci_executed | `-` |
+| M4Sugar | programming | hand-written | source | `source (toolchain required)` |
+| Macaulay2 | programming | hand-written | source | `source (toolchain required)` |
+| Makefile | programming | hand-written | source | `source (toolchain required)` |
+| Mako | programming | template | not_ci_executed | `-` |
+| Markdown | prose | template | not_ci_executed | `-` |
+| Marko | markup | document | source | `valid markup document` |
+| Mask | markup | document | source | `valid markup document` |
+| Mathematical Programming System | programming | generated | source | `source (toolchain required)` |
+| MATLAB | programming | template | not_ci_executed | `octave xibaleda.m` |
+| Maven POM | data | document | source | `valid data document` |
+| Max | programming | generated | source | `source (toolchain required)` |
+| MAXScript | programming | hello-world | source | `source (toolchain required)` |
+| mcfunction | programming | hand-written | source | `source (toolchain required)` |
+| mdsvex | markup | document | source | `valid markup document` |
+| MDX | markup | document | source | `valid markup document` |
+| Mercury | programming | template | not_ci_executed | `mmc nupavo.m` |
+| Mermaid | markup | document | source | `valid markup document` |
+| Meson | programming | template | not_ci_executed | `-` |
+| Metal | programming | template | not_ci_executed | `-` |
+| MeTTa | programming | generated | source | `source (toolchain required)` |
+| Microsoft Developer Studio Project | data | document | source | `valid data document` |
+| Microsoft Visual Studio Solution | data | document | source | `valid data document` |
+| MiniD | programming | generated | source | `source (toolchain required)` |
+| MiniScript | programming | hand-written | source | `source (toolchain required)` |
+| MiniYAML | data | document | source | `valid data document` |
+| MiniZinc | programming | hand-written | source | `source (toolchain required)` |
+| MiniZinc Data | data | document | source | `valid data document` |
+| Mint | programming | hello-world | source | `source (toolchain required)` |
+| Mirah | programming | hand-written | source | `source (toolchain required)` |
+| mIRC Script | programming | hand-written | source | `source (toolchain required)` |
+| MLIR | programming | generated | source | `source (toolchain required)` |
+| Modelica | programming | template | not_ci_executed | `-` |
+| Modula-2 | programming | template | not_ci_executed | `-` |
+| Modula-3 | programming | template | not_ci_executed | `-` |
+| Module Management System | programming | generated | source | `source (toolchain required)` |
+| Mojo | programming | hello-world | source | `source (toolchain required)` |
+| Monkey | programming | hello-world | source | `source (toolchain required)` |
+| Monkey C | programming | hand-written | source | `source (toolchain required)` |
+| Moocode | programming | generated | source | `source (toolchain required)` |
+| MoonBit | programming | hand-written | source | `source (toolchain required)` |
+| MoonScript | programming | hello-world | source | `source (toolchain required)` |
+| Motoko | programming | template | not_ci_executed | `-` |
+| Motorola 68K Assembly | programming | generated | source | `source (toolchain required)` |
+| Move | programming | hello-world | source | `source (toolchain required)` |
+| MQL4 | programming | template | not_ci_executed | `-` |
+| MQL5 | programming | template | not_ci_executed | `-` |
+| MTML | markup | document | source | `valid markup document` |
+| MUF | programming | hello-world | source | `source (toolchain required)` |
+| mupad | programming | generated | source | `source (toolchain required)` |
+| Muse | prose | document | source | `valid prose document` |
+| Mustache | markup | document | source | `valid markup document` |
+| Myghty | programming | generated | source | `source (toolchain required)` |
+| nanorc | data | document | source | `valid data document` |
+| Nasal | programming | hand-written | source | `source (toolchain required)` |
+| NASL | programming | generated | source | `source (toolchain required)` |
+| NCL | programming | hand-written | source | `source (toolchain required)` |
+| Nearley | programming | hand-written | source | `source (toolchain required)` |
+| Nemerle | programming | template | not_ci_executed | `-` |
+| NEON | data | document | source | `valid data document` |
+| nesC | programming | generated | source | `source (toolchain required)` |
+| NetLinx | programming | generated | source | `source (toolchain required)` |
+| NetLinx+ERB | programming | generated | source | `source (toolchain required)` |
+| NetLogo | programming | template | not_ci_executed | `netlogo zuqo.nlogo` |
+| NewLisp | programming | template | not_ci_executed | `newlisp segu.nl` |
+| Nextflow | programming | template | not_ci_executed | `nextflow hyzyxu.nf` |
+| Nginx | data | document | source | `valid data document` |
+| Nickel | programming | hand-written | source | `source (toolchain required)` |
+| Nim | programming | template | not_ci_executed | `-` |
+| Ninja | data | document | source | `valid data document` |
+| Nit | programming | hello-world | source | `source (toolchain required)` |
+| Nix | programming | template | not_ci_executed | `-` |
+| NL | data | document | source | `valid data document` |
+| NMODL | programming | generated | source | `source (toolchain required)` |
+| Noir | programming | generated | source | `source (toolchain required)` |
+| NPM Config | data | document | source | `valid data document` |
+| NSIS | programming | hand-written | source | `source (toolchain required)` |
+| Nu | programming | template | not_ci_executed | `-` |
+| NumPy | programming | hand-written | source | `source (toolchain required)` |
+| Nunjucks | markup | document | source | `valid markup document` |
+| Nushell | programming | hand-written | source | `source (toolchain required)` |
+| NWScript | programming | hello-world | source | `source (toolchain required)` |
+| OASv2-json | data | document | source | `valid data document` |
+| OASv2-yaml | data | document | source | `valid data document` |
+| OASv3-json | data | document | source | `valid data document` |
+| OASv3-yaml | data | document | source | `valid data document` |
+| Oberon | programming | hello-world | source | `source (toolchain required)` |
+| ObjDump | data | document | source | `valid data document` |
+| Object Data Instance Notation | data | document | source | `valid data document` |
+| Objective-C | programming | template | not_ci_executed | `-` |
+| Objective-C++ | programming | template | not_ci_executed | `-` |
+| Objective-J | programming | hand-written | source | `source (toolchain required)` |
+| ObjectScript | programming | generated | source | `source (toolchain required)` |
+| OCaml | programming | template | ci_executed | `ocaml kinoni.ml` |
+| Odin | programming | template | not_ci_executed | `odin tumosu.odin` |
+| Omgrofl | programming | hello-world | source | `source (toolchain required)` |
+| OMNeT++ MSG | programming | generated | source | `source (toolchain required)` |
+| OMNeT++ NED | programming | generated | source | `source (toolchain required)` |
+| ooc | programming | hello-world | source | `source (toolchain required)` |
+| Opa | programming | template | not_ci_executed | `-` |
+| Opal | programming | generated | source | `source (toolchain required)` |
+| Open Policy Agent | programming | hand-written | source | `source (toolchain required)` |
+| OpenAPI Specification v2 | data | document | source | `valid data document` |
+| OpenAPI Specification v3 | data | document | source | `valid data document` |
+| OpenCL | programming | hand-written | source | `source (toolchain required)` |
+| OpenEdge ABL | programming | hand-written | source | `source (toolchain required)` |
+| OpenQASM | programming | template | not_ci_executed | `-` |
+| OpenRC runscript | programming | hand-written | source | `source (toolchain required)` |
+| OpenSCAD | programming | template | not_ci_executed | `openscad hovumoji.scad` |
+| OpenStep Property List | data | document | source | `valid data document` |
+| OpenType Feature File | data | document | source | `valid data document` |
+| Option List | data | document | source | `valid data document` |
+| Org | prose | document | source | `valid prose document` |
+| OverpassQL | programming | hand-written | source | `source (toolchain required)` |
+| OverPy | programming | generated | source | `source (toolchain required)` |
+| Ox | programming | hello-world | source | `source (toolchain required)` |
+| Oxygene | programming | hello-world | source | `source (toolchain required)` |
+| Oz | programming | template | not_ci_executed | `-` |
+| P4 | programming | hand-written | source | `source (toolchain required)` |
+| Pact | programming | hand-written | source | `source (toolchain required)` |
+| Pan | programming | generated | source | `source (toolchain required)` |
+| Papyrus | programming | hand-written | source | `source (toolchain required)` |
+| Parrot | programming | hand-written | source | `source (toolchain required)` |
+| Parrot Assembly | programming | generated | source | `source (toolchain required)` |
+| Parrot Internal Representation | programming | generated | source | `source (toolchain required)` |
+| Pascal | programming | template | ci_executed | `fpc vikusilo.pas -o/tmp/hello_pas >/dev/null && /tmp/hello_pas` |
+| Pawn | programming | hello-world | source | `source (toolchain required)` |
+| PDDL | programming | hand-written | source | `source (toolchain required)` |
+| PEG.js | programming | hand-written | source | `source (toolchain required)` |
+| Pep8 | programming | hand-written | source | `source (toolchain required)` |
+| Perl | programming | template | ci_executed | `perl meweza.pl` |
+| PHP | programming | template | ci_executed | `php jibewali.php` |
+| Pic | markup | document | source | `valid markup document` |
+| Pickle | data | document | source | `valid data document` |
+| PicoLisp | programming | hand-written | source | `source (toolchain required)` |
+| PigLatin | programming | hand-written | source | `source (toolchain required)` |
+| Pike | programming | hello-world | source | `source (toolchain required)` |
+| Pip Requirements | data | document | source | `valid data document` |
+| pkg-config | data | document | source | `valid data document` |
+| Pkl | programming | hand-written | source | `source (toolchain required)` |
+| PlantUML | data | document | source | `valid data document` |
+| PLpgSQL | programming | hand-written | source | `source (toolchain required)` |
+| PLSQL | programming | hand-written | source | `source (toolchain required)` |
+| Pod | prose | document | source | `valid prose document` |
+| Pod 6 | prose | document | source | `valid prose document` |
+| PogoScript | programming | generated | source | `source (toolchain required)` |
+| Polar | programming | generated | source | `source (toolchain required)` |
+| Pony | programming | template | not_ci_executed | `pony nuty.pony` |
+| Portugol | programming | hello-world | source | `source (toolchain required)` |
+| PostCSS | markup | hello-world | source | `source (toolchain required)` |
+| PostScript | markup | hello-world | source | `source (toolchain required)` |
+| POV-Ray SDL | programming | hand-written | source | `source (toolchain required)` |
+| Power Query | programming | hand-written | source | `source (toolchain required)` |
+| PowerBuilder | programming | hello-world | source | `source (toolchain required)` |
+| PowerShell | programming | template | not_ci_executed | `pwsh sifeko.ps1` |
+| Praat | programming | hand-written | source | `source (toolchain required)` |
+| Prisma | data | document | source | `valid data document` |
+| Pro*C | programming | hand-written | source | `source (toolchain required)` |
+| Processing | programming | template | not_ci_executed | `-` |
+| Procfile | programming | hand-written | source | `source (toolchain required)` |
+| Proguard | data | document | source | `valid data document` |
+| Prolog | programming | template | ci_executed | `swipl -q -g "main" -t halt -f fixyka.pro` |
+| Promela | programming | hello-world | source | `source (toolchain required)` |
+| Propeller Spin | programming | hand-written | source | `source (toolchain required)` |
+| Protocol Buffer | data | document | source | `valid data document` |
+| Protocol Buffer Text Format | data | document | source | `valid data document` |
+| Public Key | data | document | source | `valid data document` |
+| Pug | markup | hello-world | source | `source (toolchain required)` |
+| Puppet | programming | template | not_ci_executed | `puppet vemahabe.pp` |
+| Pure Data | data | hello-world | source | `source (toolchain required)` |
+| PureBasic | programming | template | not_ci_executed | `-` |
+| PureScript | programming | template | not_ci_executed | `purs zacubocu.purs` |
+| Pyret | programming | hello-world | source | `source (toolchain required)` |
+| Python | programming | template | ci_executed | `python3 jyru.py` |
+| Python console | programming | hand-written | source | `source (toolchain required)` |
+| Python traceback | data | document | source | `valid data document` |
+| q | programming | hello-world | source | `source (toolchain required)` |
+| Q# | programming | template | not_ci_executed | `-` |
+| QMake | programming | hand-written | source | `source (toolchain required)` |
+| QML | programming | template | not_ci_executed | `-` |
+| Qt Script | programming | generated | source | `source (toolchain required)` |
+| Quake | programming | hand-written | source | `source (toolchain required)` |
+| QuakeC | programming | hello-world | source | `source (toolchain required)` |
+| QuickBASIC | programming | hand-written | source | `source (toolchain required)` |
+| Quint | programming | generated | source | `source (toolchain required)` |
+| R | programming | template | ci_executed | `Rscript jimalado.R` |
+| Racket | programming | template | ci_executed | `racket bawo.rkt` |
+| Ragel | programming | template | not_ci_executed | `-` |
+| Raku | programming | template | not_ci_executed | `-` |
+| RAML | markup | document | source | `valid markup document` |
+| Rascal | programming | template | not_ci_executed | `-` |
+| RAScript | programming | generated | source | `source (toolchain required)` |
+| Raw token data | data | document | source | `valid data document` |
+| RBS | data | document | source | `valid data document` |
+| RDoc | prose | document | source | `valid prose document` |
+| Readline Config | data | document | source | `valid data document` |
+| REALbasic | programming | hello-world | source | `source (toolchain required)` |
+| Reason | programming | template | not_ci_executed | `-` |
+| ReasonLIGO | programming | generated | source | `source (toolchain required)` |
+| Rebol | programming | hello-world | source | `source (toolchain required)` |
+| Record Jar | data | document | source | `valid data document` |
+| Red | programming | template | not_ci_executed | `red magabily.red` |
+| Redcode | programming | hand-written | source | `source (toolchain required)` |
+| Redirect Rules | data | document | source | `valid data document` |
+| Redscript | programming | generated | source | `source (toolchain required)` |
+| Regular Expression | data | document | source | `valid data document` |
+| Ren'Py | programming | hand-written | source | `source (toolchain required)` |
+| RenderScript | programming | generated | source | `source (toolchain required)` |
+| ReScript | programming | template | not_ci_executed | `-` |
+| reStructuredText | prose | hello-world | source | `source (toolchain required)` |
+| REXX | programming | template | not_ci_executed | `rexx qixuva.rexx` |
+| Rez | programming | generated | source | `source (toolchain required)` |
+| Rich Text Format | markup | document | source | `valid markup document` |
+| Ring | programming | template | not_ci_executed | `ring qocucy.ring` |
+| Riot | markup | document | source | `valid markup document` |
+| RMarkdown | prose | document | source | `valid prose document` |
+| RobotFramework | programming | template | not_ci_executed | `-` |
+| Robots Exclusion Rules | data | document | source | `valid data document` |
+| Roc | programming | template | not_ci_executed | `-` |
+| Rocq Prover | programming | hand-written | source | `source (toolchain required)` |
+| Roff | markup | document | source | `valid markup document` |
+| Roff Manpage | markup | document | source | `valid markup document` |
+| RON | data | document | source | `valid data document` |
+| ROS Interface | data | document | source | `valid data document` |
+| Rouge | programming | generated | source | `source (toolchain required)` |
+| RouterOS Script | programming | hand-written | source | `source (toolchain required)` |
+| RPC | programming | hand-written | source | `source (toolchain required)` |
+| RPGLE | programming | hand-written | source | `source (toolchain required)` |
+| RPM Spec | data | document | source | `valid data document` |
+| Ruby | programming | template | ci_executed | `ruby cavixelu.rb` |
+| RUNOFF | markup | document | source | `valid markup document` |
+| Rust | programming | template | ci_executed | `rustc cyliwysa.rs -o /tmp/hello_rs && /tmp/hello_rs` |
+| Sage | programming | generated | source | `source (toolchain required)` |
+| Sail | programming | generated | source | `source (toolchain required)` |
+| Salt | programming | hand-written | source | `source (toolchain required)` |
+| SAS | programming | template | not_ci_executed | `sas vawe.sas` |
+| Sass | markup | hello-world | source | `source (toolchain required)` |
+| Scala | programming | template | not_ci_executed | `-` |
+| Scaml | markup | document | source | `valid markup document` |
+| Scenic | programming | generated | source | `source (toolchain required)` |
+| Scheme | programming | template | ci_executed | `guile viwyfada.scm` |
+| Scilab | programming | template | not_ci_executed | `scilab sotefo.sci` |
+| SCSS | markup | hello-world | source | `source (toolchain required)` |
+| sed | programming | template | ci_executed | `echo foo | sed -f pomaboqa.sed` |
+| Self | programming | template | not_ci_executed | `-` |
+| SELinux Policy | data | document | source | `valid data document` |
+| ShaderLab | programming | hand-written | source | `source (toolchain required)` |
+| Shell | programming | template | ci_executed | `bash moqy.sh` |
+| ShellCheck Config | data | document | source | `valid data document` |
+| ShellSession | programming | hand-written | source | `source (toolchain required)` |
+| Shen | programming | hello-world | source | `source (toolchain required)` |
+| Sieve | programming | hand-written | source | `source (toolchain required)` |
+| Simple File Verification | data | document | source | `valid data document` |
+| Singularity | programming | hand-written | source | `source (toolchain required)` |
+| Slang | programming | generated | source | `source (toolchain required)` |
+| Slash | programming | generated | source | `source (toolchain required)` |
+| Slice | programming | template | not_ci_executed | `-` |
+| Slim | markup | hello-world | source | `source (toolchain required)` |
+| Slint | markup | document | source | `valid markup document` |
+| Smali | programming | hello-world | source | `source (toolchain required)` |
+| Smalltalk | programming | template | not_ci_executed | `gst kopesa.st` |
+| Smarty | programming | template | not_ci_executed | `-` |
+| Smithy | programming | template | not_ci_executed | `-` |
+| SmPL | programming | hand-written | source | `source (toolchain required)` |
+| SMT | programming | hand-written | source | `source (toolchain required)` |
+| Snakemake | programming | template | not_ci_executed | `snakemake xymu.smk` |
+| Solidity | programming | template | not_ci_executed | `solc suseri.sol` |
+| Soong | data | document | source | `valid data document` |
+| SourcePawn | programming | template | not_ci_executed | `-` |
+| SPARQL | data | hello-world | source | `source (toolchain required)` |
+| SpiceDB Schema | data | document | source | `valid data document` |
+| Spline Font Database | data | document | source | `valid data document` |
+| SQF | programming | template | not_ci_executed | `-` |
+| SQL | data | template | ci_executed | `sqlite3 :memory: < waxico.sql` |
+| SQLPL | programming | generated | source | `source (toolchain required)` |
+| Squirrel | programming | template | not_ci_executed | `squirrel bapa.nut` |
+| SRecode Template | markup | document | source | `valid markup document` |
+| SSH Config | data | document | source | `valid data document` |
+| Stan | programming | template | not_ci_executed | `-` |
+| Standard ML | programming | hello-world | source | `source (toolchain required)` |
+| STAR | data | document | source | `valid data document` |
+| Starlark | programming | template | not_ci_executed | `-` |
+| Stata | programming | template | not_ci_executed | `stata lytice.do` |
+| STL | data | document | source | `valid data document` |
+| STON | data | document | source | `valid data document` |
+| StringTemplate | markup | document | source | `valid markup document` |
+| Stylus | markup | hello-world | source | `source (toolchain required)` |
+| SubRip Text | data | document | source | `valid data document` |
+| SugarSS | markup | document | source | `valid markup document` |
+| SuperCollider | programming | template | not_ci_executed | `-` |
+| SurrealQL | programming | hand-written | source | `source (toolchain required)` |
+| Survex data | data | document | source | `valid data document` |
+| Svelte | markup | hello-world | source | `source (toolchain required)` |
+| SVG | data | hello-world | source | `source (toolchain required)` |
+| Sway | programming | hand-written | source | `source (toolchain required)` |
+| Sweave | prose | document | source | `valid prose document` |
+| Swift | programming | template | not_ci_executed | `-` |
+| SWIG | programming | generated | source | `source (toolchain required)` |
+| SystemVerilog | programming | template | not_ci_executed | `iverilog batesaqi.sv` |
+| Tact | programming | hand-written | source | `source (toolchain required)` |
+| Talon | programming | generated | source | `source (toolchain required)` |
+| Tape | programming | generated | source | `source (toolchain required)` |
+| Tcl | programming | template | ci_executed | `tclsh gyjuqega.tcl` |
+| Tcsh | programming | hello-world | source | `source (toolchain required)` |
+| Tea | markup | hello-world | source | `source (toolchain required)` |
+| Teal | programming | hand-written | source | `source (toolchain required)` |
+| templ | markup | document | source | `valid markup document` |
+| Terra | programming | template | not_ci_executed | `terra jody.t` |
+| Terraform Template | markup | document | source | `valid markup document` |
+| TeX | markup | hello-world | source | `source (toolchain required)` |
+| Texinfo | prose | document | source | `valid prose document` |
+| Text | prose | document | source | `valid prose document` |
+| TextGrid | data | document | source | `valid data document` |
+| Textile | prose | document | source | `valid prose document` |
+| TextMate Properties | data | document | source | `valid data document` |
+| Thrift | programming | template | not_ci_executed | `-` |
+| TI Program | programming | hand-written | source | `source (toolchain required)` |
+| TL-Verilog | programming | generated | source | `source (toolchain required)` |
+| TLA | programming | hand-written | source | `source (toolchain required)` |
+| TMDL | data | document | source | `valid data document` |
+| Toit | programming | hand-written | source | `source (toolchain required)` |
+| Tolk | programming | generated | source | `source (toolchain required)` |
+| TOML | data | hello-world | source | `source (toolchain required)` |
+| Tor Config | data | document | source | `valid data document` |
+| Tree-sitter Query | programming | hand-written | source | `source (toolchain required)` |
+| TSPLIB data | data | document | source | `valid data document` |
+| TSQL | programming | hello-world | source | `source (toolchain required)` |
+| TSV | data | document | source | `valid data document` |
+| TSX | programming | hand-written | source | `source (toolchain required)` |
+| Turing | programming | template | not_ci_executed | `-` |
+| Turtle | data | document | source | `valid data document` |
+| Twig | markup | document | source | `valid markup document` |
+| TXL | programming | generated | source | `source (toolchain required)` |
+| Type Language | data | document | source | `valid data document` |
+| TypeScript | programming | template | ci_executed | `npx --yes tsc kely.ts && node kely.js` |
+| TypeSpec | programming | generated | source | `source (toolchain required)` |
+| Typst | programming | hand-written | source | `source (toolchain required)` |
+| ucode | programming | generated | source | `source (toolchain required)` |
+| Unified Parallel C | programming | hand-written | source | `source (toolchain required)` |
+| Unity3D Asset | data | document | source | `valid data document` |
+| Unix Assembly | programming | generated | source | `source (toolchain required)` |
+| Uno | programming | generated | source | `source (toolchain required)` |
+| UnrealScript | programming | hand-written | source | `source (toolchain required)` |
+| Untyped Plutus Core | programming | generated | source | `source (toolchain required)` |
+| UrWeb | programming | template | not_ci_executed | `-` |
+| V | programming | template | not_ci_executed | `-` |
+| Vala | programming | template | ci_executed | `valac niciqe.vala -o /tmp/hello_vala && /tmp/hello_vala` |
+| Valve Data Format | data | document | source | `valid data document` |
+| VBA | programming | template | not_ci_executed | `-` |
+| VBScript | programming | hand-written | source | `source (toolchain required)` |
+| vCard | data | document | source | `valid data document` |
+| VCL | programming | hand-written | source | `source (toolchain required)` |
+| Velocity Template Language | markup | document | source | `valid markup document` |
+| Vento | markup | document | source | `valid markup document` |
+| Verilog | programming | hello-world | source | `source (toolchain required)` |
+| Verse | programming | generated | source | `source (toolchain required)` |
+| VHDL | programming | template | not_ci_executed | `-` |
+| Vim Help File | prose | document | source | `valid prose document` |
+| Vim Script | programming | hand-written | source | `source (toolchain required)` |
+| Vim Snippet | markup | document | source | `valid markup document` |
+| Visual Basic .NET | programming | template | ci_executed | `cd languages/vb && dotnet run` |
+| Visual Basic 6.0 | programming | hand-written | source | `source (toolchain required)` |
+| Volt | programming | generated | source | `source (toolchain required)` |
+| Vue | markup | hello-world | source | `source (toolchain required)` |
+| Vyper | programming | hand-written | source | `source (toolchain required)` |
+| Wavefront Material | data | document | source | `valid data document` |
+| Wavefront Object | data | document | source | `valid data document` |
+| WDL | programming | hand-written | source | `source (toolchain required)` |
+| Web Ontology Language | data | document | source | `valid data document` |
+| WebAssembly | programming | hello-world | source | `source (toolchain required)` |
+| WebAssembly Interface Type | data | document | source | `valid data document` |
+| WebIDL | programming | template | not_ci_executed | `-` |
+| WebVTT | data | document | source | `valid data document` |
+| Wget Config | data | document | source | `valid data document` |
+| WGSL | programming | hand-written | source | `source (toolchain required)` |
+| Whiley | programming | hello-world | source | `source (toolchain required)` |
+| Wikitext | prose | hello-world | source | `source (toolchain required)` |
+| Win32 Message File | data | document | source | `valid data document` |
+| Windows Registry Entries | data | document | source | `valid data document` |
+| wisp | programming | hand-written | source | `source (toolchain required)` |
+| Witcher Script | programming | generated | source | `source (toolchain required)` |
+| Wolfram Language | programming | hand-written | source | `source (toolchain required)` |
+| Wollok | programming | hand-written | source | `source (toolchain required)` |
+| World of Warcraft Addon Data | data | document | source | `valid data document` |
+| Wren | programming | template | not_ci_executed | `-` |
+| X BitMap | data | document | source | `valid data document` |
+| X Font Directory Index | data | document | source | `valid data document` |
+| X PixMap | data | document | source | `valid data document` |
+| X10 | programming | template | not_ci_executed | `-` |
+| xBase | programming | hello-world | source | `source (toolchain required)` |
+| XC | programming | hand-written | source | `source (toolchain required)` |
+| XCompose | data | document | source | `valid data document` |
+| Xmake | programming | hand-written | source | `source (toolchain required)` |
+| XML | data | hello-world | source | `source (toolchain required)` |
+| XML Property List | data | document | source | `valid data document` |
+| Xojo | programming | generated | source | `source (toolchain required)` |
+| Xonsh | programming | hand-written | source | `source (toolchain required)` |
+| XPages | data | document | source | `valid data document` |
+| XProc | programming | hand-written | source | `source (toolchain required)` |
+| XQuery | programming | template | not_ci_executed | `-` |
+| XS | programming | generated | source | `source (toolchain required)` |
+| XSLT | programming | template | not_ci_executed | `-` |
+| Xtend | programming | hand-written | source | `source (toolchain required)` |
+| Yacc | programming | hand-written | source | `source (toolchain required)` |
+| YAML | data | hello-world | source | `source (toolchain required)` |
+| YANG | data | document | source | `valid data document` |
+| YARA | programming | template | not_ci_executed | `yara goqula.yar` |
+| YASnippet | markup | document | source | `valid markup document` |
+| Yul | programming | hand-written | source | `source (toolchain required)` |
+| ZAP | programming | generated | source | `source (toolchain required)` |
+| Zeek | programming | template | not_ci_executed | `zeek sopi.zeek` |
+| ZenScript | programming | hand-written | source | `source (toolchain required)` |
+| Zephir | programming | template | not_ci_executed | `-` |
+| Zig | programming | template | not_ci_executed | `-` |
+| ZIL | programming | generated | source | `source (toolchain required)` |
+| Zimpl | programming | template | not_ci_executed | `-` |
+| Zmodel | data | document | source | `valid data document` |
 
 ## Honesty note
 
-A language is only marked `ci_executed` if its example actually runs in CI and prints `Hello World!`. `not_ci_executed` means the source is genuine but the interpreter/compiler is not available in the CI environment (or needs a project scaffold). Nothing here is a comment masquerading as code.
+`ci_executed` means the example actually runs in CI and prints `Hello World!`. `not_ci_executed` / `hello-world` / `hand-written` are genuine sources whose toolchain isn't on the CI runner (or which need a project scaffold). `document` files are valid files in markup/data/prose formats. `generated` files are best-effort programs for obscure languages with no known example anywhere in the database — the user asked for every language to ship a file, so they do.

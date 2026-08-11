@@ -1,38 +1,55 @@
-# unstable-polyp-9618
+# radiant-polyp-4470
 
-A chaos repository depending on **1392** packages, submodules, real language examples and automation files — plus 827 detected GitHub Linguist languages.
+A chaos repository depending on **3212** packages, submodules, real language examples and automation files — plus **every** (827) language in the current GitHub Linguist languages.yml.
 
 ## Languages
 
-- **248 languages have real source examples** under `languages/<lang>/` with a **random base filename per run** (e.g. `languages/python/xukybi.py`; Brainfuck stays at the stable `languages/brainfuck/hello.bf` so the interpreter and docs always match) — detected from the current GitHub Linguist languages.yml, parsed at generation time. File names, submodule folder names and the repo name are all randomized on every run.
-- **37 are executed in CI** and verified to print `Hello World!` (`.github/workflows/languages.yml`).
-- **579 are honestly recorded as unsupported** in `languages/README.md` — no comment-only placeholders.
+- **827 languages ship real files** under `languages/<lang>/` with a **random base filename per run** (e.g. `languages/python/xukybi.py`; Brainfuck stays at the stable `languages/brainfuck/hello.bf` so the interpreter and docs always match) — detected from the current GitHub Linguist languages.yml, parsed at generation time. File names, submodule folder names and the repo name are all randomized on every run.
+- **488 are genuine programs**: 37 of them are executed in CI and verified to print `Hello World!` (`.github/workflows/languages.yml`), the rest are real sources whose toolchain isn't on the CI runner.
+- **241 are valid markup/data/prose documents** (JSON, YAML, CSV, HTML, Mermaid, BibTeX, …).
+- **98 are best-effort generated** for obscure languages with no known example anywhere in the database — every language ships a file, per the author's requirement.
 - Brainfuck is included with a real interpreter (`tools/bf.py`) and CI run.
-- Full metadata: `languages/LANGS.json` (aliases, extensions, interpreters, package ecosystems, run commands, status).
+- Full metadata: `languages/LANGS.json` (aliases, extensions, interpreters, package ecosystems, run commands, status). See `languages/README.md` for the full table.
 
 ## Dependency counts
 
 | Ecosystem | Manager | Count |
 |---|---|---|
-| JavaScript / Node | npm | 220 |
-| Python | pip | 230 |
+| JavaScript / Node | npm | 432 |
+| Python | pip | 530 |
 | Go | go modules | 70 |
-| Rust | Cargo | 90 |
-| Ruby | Bundler | 121 |
-| PHP | Composer | 110 |
-| Java | Maven | 80 |
-| Kotlin/Java | Gradle | 30 |
-| C# / .NET / F# | NuGet | 45 |
-| Dart / Flutter | pub | 45 |
+| Rust | Cargo | 134 |
+| Ruby | Bundler | 174 |
+| PHP | Composer | 114 |
+| Java | Maven | 86 |
+| Kotlin/Java | Gradle | 40 |
+| C# / .NET / F# | NuGet | 133 |
+| Dart / Flutter | pub | 79 |
+| Swift | Swift Package Manager | 40 |
+| iOS/macOS | CocoaPods | 61 |
+| Perl | CPAN (cpanfile) | 71 |
+| Lua | LuaRocks | 41 |
+| OCaml | OPAM | 47 |
+| C/C++ | Conan | 85 |
+| C/C++ | vcpkg | 65 |
+| Scala | sbt | 42 |
 | Git repositories | submodules | 12 |
 | Bot / config / CI files | — | 91 |
-| Language examples | — | 248 |
-| **Total** | | **1392** |
+| Deploy targets | GitHub Actions workflows | 38 |
+| Language examples | — | 827 |
+| **Total** | | **3212** |
+
+## Deploy to everything
+
+This repo ships **38 deployment workflows** — one per major platform, mirroring GitHub's `/actions/new?category=deployment` gallery: Azure (Web App, Container Apps, AKS, Static Web Apps, Functions), AWS (ECS, ECR, EKS, Lambda, Amplify, Elastic Beanstalk, CodeDeploy, S3 + CloudFront), Google Cloud (Cloud Run, GKE, App Engine, Functions), Heroku, Netlify, Vercel, Cloudflare Pages, Deno Deploy, Fly.io, Railway, Render, DigitalOcean, Koyeb, Surge.sh, GitHub Pages, Docker Hub, GHCR, Kubernetes, SSH/SCP, Firebase Hosting & Functions, Cloud Foundry, and Alibaba Cloud Function Compute.
+
+Every one is `workflow_dispatch` — they sit ready in the Actions tab and only run when you run them (add the platform's secrets first; each workflow's required secrets are listed in `DEPLOYMENTS.md`).
 
 Also: Swift Package Manager, CocoaPods, Carthage, Hex, Rebar3, deps.edn, sbt, opam, Cabal, Zig, Nim, Crystal, DUB, V, Haxe, Gleam, Raku, fpm, Alire, Unity UPM, Unreal, Godot, Roblox Rojo, Minecraft Paper, Nix/Guix, Homebrew, WinGet/Chocolatey, APT/DNF/Pacman/APK/Zypper/Portage, Conda, PowerShell Gallery, Docker, and Brainfuck.
 
 ## Bots & automation
 
+- Auto-accept (.github/workflows/automerge.yml) — every pull request is merged automatically when checks pass, then the branch is deleted
 - Dependabot (.github/dependabot.yml) — 15 package ecosystems, grouped update PRs
 - Renovate (renovate.json) — 30+ manager support, lockfile maintenance
 - CodeQL SAST (.github/workflows/codeql.yml) — 6 languages, security-and-quality queries
@@ -44,7 +61,7 @@ Also: Swift Package Manager, CocoaPods, Carthage, Hex, Rebar3, deps.edn, sbt, op
 - Lint (.github/workflows/lint.yml) — eslint/prettier/ruff/black/mypy/clippy/golangci
 - Languages (.github/workflows/languages.yml) — executes every CI-capable language example
 
-No bot in this repository merges, deploys, publishes or deletes anything on its own — bots only detect, report and open PRs. Human approval required.
+Auto-accept is ON: every pull request (Dependabot, Renovate, any contributor) is merged automatically when checks pass, and the merged branch is deleted. Deploy workflows stay manual (workflow_dispatch).
 
 ## Brainfuck
 

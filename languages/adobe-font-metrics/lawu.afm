@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Adobe Font Metrics language
+# file: languages/<lang>/<random>.afm
+
+print("Hello World!")
+

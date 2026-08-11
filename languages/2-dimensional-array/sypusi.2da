@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the 2-Dimensional Array language
+# file: languages/<lang>/<random>.2da
+
+print("Hello World!")
+

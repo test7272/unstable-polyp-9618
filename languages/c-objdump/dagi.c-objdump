@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the C-ObjDump language
+# file: languages/<lang>/<random>.c-objdump
+
+print("Hello World!")
+

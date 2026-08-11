@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the ASN.1 language
+# file: languages/<lang>/<random>.asn
+
+print("Hello World!")
+

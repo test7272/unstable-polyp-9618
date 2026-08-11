@@ -1,36 +1,36 @@
-[submodule "rali-tyju"]
-	path = rali-tyju
-	url = https://github.com/kubernetes/kubernetes.git
-[submodule "vaje-xyzyxi"]
-	path = vaje-xyzyxi
-	url = https://github.com/freeCodeCamp/freeCodeCamp.git
-[submodule "wacikypo-rigu"]
-	path = wacikypo-rigu
-	url = https://github.com/nodejs/node.git
-[submodule "bitatywu-wyno"]
-	path = bitatywu-wyno
+[submodule "wyvize-caqy"]
+	path = wyvize-caqy
+	url = https://github.com/microsoft/TypeScript.git
+[submodule "comymahu-nuwusaro"]
+	path = comymahu-nuwusaro
+	url = https://github.com/sveltejs/svelte.git
+[submodule "kazo-xariji"]
+	path = kazo-xariji
 	url = https://github.com/tailwindlabs/tailwindcss.git
-[submodule "gave-buxefoke"]
-	path = gave-buxefoke
-	url = https://github.com/facebook/react.git
-[submodule "jiju-poje"]
-	path = jiju-poje
-	url = https://github.com/expressjs/express.git
-[submodule "babove-vuni"]
-	path = babove-vuni
-	url = https://github.com/scikit-learn/scikit-learn.git
-[submodule "cikikasa-vofequ"]
-	path = cikikasa-vofequ
+[submodule "fezuki-roqi"]
+	path = fezuki-roqi
+	url = https://github.com/nodejs/node.git
+[submodule "tyhado-bede"]
+	path = tyhado-bede
+	url = https://github.com/freeCodeCamp/freeCodeCamp.git
+[submodule "dukynoge-demefi"]
+	path = dukynoge-demefi
+	url = https://github.com/django/django.git
+[submodule "jesaqady-vino"]
+	path = jesaqady-vino
 	url = https://github.com/pytorch/pytorch.git
-[submodule "nygy-gino"]
-	path = nygy-gino
+[submodule "xobity-myvizotu"]
+	path = xobity-myvizotu
+	url = https://github.com/openai/openai-python.git
+[submodule "tewa-junivuci"]
+	path = tewa-junivuci
+	url = https://github.com/d3/d3.git
+[submodule "tuna-cugyvifa"]
+	path = tuna-cugyvifa
 	url = https://github.com/home-assistant/core.git
-[submodule "jeqyge-husope"]
-	path = jeqyge-husope
-	url = https://github.com/angular/angular.git
-[submodule "qimafixu-zezu"]
-	path = qimafixu-zezu
-	url = https://github.com/vuejs/core.git
-[submodule "cocuqony-vume"]
-	path = cocuqony-vume
-	url = https://github.com/tensorflow/tensorflow.git
+[submodule "myna-sihadipo"]
+	path = myna-sihadipo
+	url = https://github.com/rust-lang/rust.git
+[submodule "nati-riwu"]
+	path = nati-riwu
+	url = https://github.com/flutter/flutter.git

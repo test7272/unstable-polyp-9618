@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the ABNF language
+# file: languages/<lang>/<random>.abnf
+
+print("Hello World!")
+

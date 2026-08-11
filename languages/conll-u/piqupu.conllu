@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the CoNLL-U language
+# file: languages/<lang>/<random>.conllu
+
+print("Hello World!")
+

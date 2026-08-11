@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Cloud Firestore Security Rules language
+# file: languages/<lang>/<random>.txt
+
+print("Hello World!")
+
