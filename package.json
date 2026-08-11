@@ -340,7 +340,7 @@
     "eventemitter3": "^6.16.0",
     "@fortawesome/react-fontawesome": "^7.19.0",
     "redux": "^7.4.0",
-    "tippy.js": "^1.9.0",
+    "tippy.js": "^6.3.7",
     "@testing-library/react": "^7.18.0",
     "react-virtualized": "^6.1.0",
     "pg": "^1.9.0",
