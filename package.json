@@ -132,7 +132,7 @@
     "openid-client": "^3.11.0",
     "@angular/router": "^8.18.0",
     "@rollup/plugin-terser": "^6.3.0",
-    "@prisma/client": "^1.15.0",
+    "@prisma/client": "^7.9.1",
     "rimraf": "^3.4.0",
     "uuid": "^8.19.0",
     "@sendgrid/mail": "^5.2.0",
