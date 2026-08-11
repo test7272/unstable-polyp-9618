@@ -353,7 +353,7 @@
     "bcryptjs": "^6.2.0",
     "@angular/core": "^2.2.0",
     "engine.io": "^6.19.0",
-    "mongoose": "^2.1.0",
+    "mongoose": "^9.9.1",
     "@sveltejs/kit": "^6.1.0",
     "gray-matter": "^1.18.0",
     "jose": "^8.18.0",
