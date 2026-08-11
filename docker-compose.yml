@@ -1,0 +1,8 @@
+services:
+  dev:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - NODE_ENV=development

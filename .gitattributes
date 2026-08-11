@@ -1,0 +1,13 @@
+* text=auto
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.wasm binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+*.bf linguist-language=Brainfuck

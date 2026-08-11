@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": [
+    "npm", "pnpm", "yarn", "bun",
+    "pip_requirements", "pipenv", "poetry", "pep621", "pdm", "uv", "setup-cfg",
+    "bundler", "composer", "cargo", "gomod", "gradle", "gradle-wrapper",
+    "maven", "nuget", "pub", "swift", "mix", "cocoapods",
+    "dockerfile", "docker-compose", "github-actions", "git-submodules",
+    "terraform", "ansible", "helm-values", "kubernetes", "homebrew", "nix",
+    "conan", "vcpkg", "deps-edn", "leiningen", "sbt", "opam", "cabal"
+  ],
+  "lockFileMaintenance": { "enabled": true, "automerge": false },
+  "packageRules": [
+    { "matchUpdateTypes": ["patch"], "groupName": "all patches" },
+    { "matchUpdateTypes": ["minor"], "groupName": "all minor updates" },
+    { "matchUpdateTypes": ["major"], "groupName": "all major updates" }
+  ],
+  "separateMajorMinor": true,
+  "prHourlyLimit": 4,
+  "prConcurrentLimit": 10
+}

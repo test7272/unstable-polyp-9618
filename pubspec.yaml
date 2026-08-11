@@ -1,0 +1,53 @@
+name: unstable-polyp-9618
+description: Depends on everything
+version: 0.1.0
+environment:
+  sdk: '>=3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^1.0.0
+  stack_trace: ^1.0.0
+  freezed_annotation: ^1.0.0
+  connectivity_plus: ^1.0.0
+  web_socket_channel: ^1.0.0
+  retrofit: ^1.0.0
+  flutter_hooks: ^1.0.0
+  async: ^1.0.0
+  flutter_svg: ^1.0.0
+  hive: ^1.0.0
+  firebase_messaging: ^1.0.0
+  firebase_crashlytics: ^1.0.0
+  cloud_firestore: ^1.0.0
+  webview_flutter: ^1.0.0
+  package_info_plus: ^1.0.0
+  http: ^1.0.0
+  equatable: ^1.0.0
+  bloc: ^1.0.0
+  riverpod: ^1.0.0
+  supabase_flutter: ^1.0.0
+  cupertino_icons: ^1.0.0
+  font_awesome_flutter: ^1.0.0
+  device_info_plus: ^1.0.0
+  socket_io_client: ^1.0.0
+  permission_handler: ^1.0.0
+  shared_preferences: ^1.0.0
+  firebase_analytics: ^1.0.0
+  floor: ^1.0.0
+  get_it: ^1.0.0
+  geolocator: ^1.0.0
+  hive_flutter: ^1.0.0
+  camera: ^1.0.0
+  firebase_auth: ^1.0.0
+  firebase_remote_config: ^1.0.0
+  flutter_riverpod: ^1.0.0
+  firebase_core: ^1.0.0
+  build_runner: ^1.0.0
+  flutter_native_splash: ^1.0.0
+  image_picker: ^1.0.0
+  mqtt_client: ^1.0.0
+  dartz: ^1.0.0
+  dio: ^1.0.0
+  google_maps_flutter: ^1.0.0
+  riverpod_annotation: ^1.0.0
+  flutter_bloc: ^1.0.0

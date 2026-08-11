@@ -1,0 +1,13 @@
+source https://www.nuget.org/api/v2
+
+storage: none
+framework: net8.0
+
+nuget Newtonsoft.Json
+nuget FSharp.Core
+nuget FParsec
+nuget Suave
+nuget Hopac
+nuget FSharp.Data
+nuget Expecto
+nuget FsCheck

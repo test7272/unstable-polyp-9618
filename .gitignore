@@ -1,0 +1,78 @@
+# JavaScript / Node
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+pnpm-debug.log*
+yarn-error.log*
+bun.lockb
+
+# Python / pip / conda
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.pdm-python
+*.egg-info/
+.pipenv.lock
+
+# Rust / Cargo
+target/
+Cargo.lock
+
+# Go
+vendor/
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Java / Kotlin / Gradle
+.gradle/
+*.class
+target/
+kotlin-js-store/
+
+# .NET
+bin/
+obj/
+*.user
+
+# Dart / Flutter
+.dart_tool/
+.packages
+pubspec.lock
+.flutter-plugins*
+
+# Swift
+.build/
+DerivedData/
+
+# Godot
+.godot/
+export/
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+
+# Unreal
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

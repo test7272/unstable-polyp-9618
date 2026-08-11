@@ -1,0 +1,19 @@
+{
+  "FileVersion": 3,
+  "FriendlyName": "Chaos",
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "Modules": [
+    {
+      "Name": "Chaos",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "AdditionalDependencies": [ "Core", "Engine" ]
+    }
+  ],
+  "Plugins": [
+    { "Name": "EnhancedInput", "Enabled": true },
+    { "Name": "OnlineSubsystem", "Enabled": true },
+    { "Name": "PixelStreaming", "Enabled": false }
+  ]
+}

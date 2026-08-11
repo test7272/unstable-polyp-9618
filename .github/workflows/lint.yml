@@ -1,0 +1,45 @@
+name: Lint
+"on":
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: dtolnay/rust-toolchain@stable
+        with: { components: rustfmt, clippy }
+      - uses: actions/setup-go@v5
+        with: { go-version: "1.22" }
+
+      - name: eslint + prettier
+        run: |
+          npm install
+          npx eslint .
+          npx prettier --check .
+        continue-on-error: true
+      - name: ruff / black / flake8 / mypy
+        run: |
+          pip install ruff black flake8 mypy
+          ruff check . || true
+          black --check . || true
+          flake8 . || true
+          mypy . || true
+        continue-on-error: true
+      - name: clippy + rustfmt
+        run: |
+          cargo fmt --check || true
+          cargo clippy || true
+        continue-on-error: true
+      - name: golangci-lint
+        run: |
+          go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+          golangci-lint run || true
+        continue-on-error: true
+      - name: editorconfig
+        run: npx editorconfig-checker . || true
+        continue-on-error: true

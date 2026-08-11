@@ -1,0 +1,14 @@
+{
+  "name": "Chaos",
+  "version": "0.1.0",
+  "description": "Depends on everything",
+  "depends": [
+    "Cro::HTTP",
+    "JSON::Fast",
+    "Text::Markdown",
+    "DB::Pg"
+  ],
+  "provides": {
+    "Chaos": "lib/Chaos.rakumod"
+  }
+}

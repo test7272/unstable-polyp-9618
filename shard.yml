@@ -1,0 +1,14 @@
+name: chaos
+version: 0.1.0
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  crystalline:
+    github: jtomschroeder/crystalline
+  mysql:
+    github: crystal-lang/crystal-mysql
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3

@@ -1,0 +1,10 @@
+{
+  "name": "chaos",
+  "version": "0.1.0",
+  "dependencies": {
+    "hxnodejs": "",
+    "tink_core": "",
+    "actuate": "",
+    "haxe-pixi": ""
+  }
+}

@@ -1,0 +1,3 @@
+MODULE Main EXPORTS Main;
+BEGIN
+END Main.

@@ -1,0 +1,1 @@
+rule Hello { condition: true }

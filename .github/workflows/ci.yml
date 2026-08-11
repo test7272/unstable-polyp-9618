@@ -1,0 +1,73 @@
+name: CI
+"on":
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    name: Build / Lint / Test (all ecosystems)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - uses: subosito/flutter-action@v2
+
+      - name: npm
+        run: |
+          npm install
+          npm test
+        continue-on-error: true
+      - name: pip
+        run: |
+          pip install -r requirements.txt
+          python -m pytest
+        continue-on-error: true
+      - name: go
+        run: |
+          go mod download
+          go vet ./...
+        continue-on-error: true
+      - name: cargo
+        run: |
+          cargo check
+          cargo fmt --check
+          cargo clippy -- -D warnings
+        continue-on-error: true
+      - name: ruby
+        run: bundle install
+        continue-on-error: true
+      - name: php
+        run: composer install
+        continue-on-error: true
+      - name: java
+        run: |
+          mvn -q compile
+          ./gradlew compileJava
+        continue-on-error: true
+      - name: dart/flutter
+        run: flutter pub get
+        continue-on-error: true
+      - name: brainfuck
+        run: python3 tools/bf.py languages/brainfuck/hello.bf
+        continue-on-error: true

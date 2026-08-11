@@ -1,0 +1,9 @@
+{
+  "name": "chaos",
+  "description": "Depends on everything",
+  "dependencies": {
+    "vibe-d": "~>0.9.5",
+    "diet-ng": "~>1.7.0",
+    "requests": "~>2.1.4"
+  }
+}

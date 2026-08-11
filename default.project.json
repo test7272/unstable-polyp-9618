@@ -1,0 +1,10 @@
+{
+  "name": "chaos",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "chaos": { "$path": "src" }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+[submodule "rali-tyju"]
+	path = rali-tyju
+	url = https://github.com/kubernetes/kubernetes.git
+[submodule "vaje-xyzyxi"]
+	path = vaje-xyzyxi
+	url = https://github.com/freeCodeCamp/freeCodeCamp.git
+[submodule "wacikypo-rigu"]
+	path = wacikypo-rigu
+	url = https://github.com/nodejs/node.git
+[submodule "bitatywu-wyno"]
+	path = bitatywu-wyno
+	url = https://github.com/tailwindlabs/tailwindcss.git
+[submodule "gave-buxefoke"]
+	path = gave-buxefoke
+	url = https://github.com/facebook/react.git
+[submodule "jiju-poje"]
+	path = jiju-poje
+	url = https://github.com/expressjs/express.git
+[submodule "babove-vuni"]
+	path = babove-vuni
+	url = https://github.com/scikit-learn/scikit-learn.git
+[submodule "cikikasa-vofequ"]
+	path = cikikasa-vofequ
+	url = https://github.com/pytorch/pytorch.git
+[submodule "nygy-gino"]
+	path = nygy-gino
+	url = https://github.com/home-assistant/core.git
+[submodule "jeqyge-husope"]
+	path = jeqyge-husope
+	url = https://github.com/angular/angular.git
+[submodule "qimafixu-zezu"]
+	path = qimafixu-zezu
+	url = https://github.com/vuejs/core.git
+[submodule "cocuqony-vume"]
+	path = cocuqony-vume
+	url = https://github.com/tensorflow/tensorflow.git

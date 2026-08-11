@@ -1,0 +1,9 @@
+name = "chaos"
+version = "0.1.0"
+description = "Depends on everything"
+authors = ["chaos"]
+licenses = "MIT"
+
+[depends-on]
+xmlada = "^23.0"
+gnatcoll_core = "*"

@@ -1,0 +1,76 @@
+module github.com/chaos/unstable-polyp-9618
+
+go 1.22
+
+require (
+	golang.org/x/crypto v1.0.0
+	github.com/dgraph-io/badger/v4 v1.0.0
+	github.com/hashicorp/golang-lru/v2 v1.0.0
+	github.com/pelletier/go-toml/v2 v1.0.0
+	github.com/cockroachdb/pebble v1.0.0
+	github.com/spf13/viper v1.0.0
+	github.com/Shopify/sarama v1.0.0
+	github.com/go-sql-driver/mysql v1.0.0
+	github.com/segmentio/kafka-go v1.0.0
+	github.com/gin-gonic/gin v1.0.0
+	github.com/boltdb/bolt v1.0.0
+	github.com/google/go-cmp v1.0.0
+	github.com/bxcodec/faker/v3 v1.0.0
+	github.com/mitchellh/mapstructure v1.0.0
+	github.com/gorilla/sessions v1.0.0
+	golang.org/x/tools v1.0.0
+	github.com/gin-contrib/sessions v1.0.0
+	github.com/olivere/elastic/v7 v1.0.0
+	golang.org/x/time v1.0.0
+	github.com/golang-migrate/migrate/v4 v1.0.0
+	github.com/labstack/echo/v4 v1.0.0
+	golang.org/x/text v1.0.0
+	github.com/fsnotify/fsnotify v1.0.0
+	github.com/lib/pq v1.0.0
+	github.com/robfig/cron/v3 v1.0.0
+	github.com/gorilla/csrf v1.0.0
+	github.com/golang-mock/gomock v1.0.0
+	github.com/gin-contrib/cors v1.0.0
+	github.com/sirupsen/logrus v1.0.0
+	github.com/joho/godotenv v1.0.0
+	github.com/mattn/go-sqlite3 v1.0.0
+	github.com/gorilla/handlers v1.0.0
+	github.com/minio/minio-go/v7 v1.0.0
+	google.golang.org/grpc v1.0.0
+	github.com/urfave/cli/v2 v1.0.0
+	github.com/hashicorp/consul/api v1.0.0
+	github.com/gorilla/mux v1.0.0
+	github.com/DATA-DOG/go-sqlmock v1.0.0
+	github.com/swaggo/gin-swagger v1.0.0
+	github.com/prometheus/client_golang v1.0.0
+	golang.org/x/oauth2 v1.0.0
+	github.com/google/uuid v1.0.0
+	golang.org/x/sync v1.0.0
+	github.com/hashicorp/terraform-plugin-sdk/v2 v1.0.0
+	github.com/spf13/cobra v1.0.0
+	github.com/jackc/pgx/v4 v1.0.0
+	github.com/stretchr/testify v1.0.0
+	github.com/go-redis/redismock/v9 v1.0.0
+	google.golang.org/protobuf v1.0.0
+	golang.org/x/net v1.0.0
+	github.com/etcd-io/etcd/client/v3 v1.0.0
+	github.com/redis/go-redis/v9 v1.0.0
+	github.com/go-chi/chi/v5 v1.0.0
+	github.com/hashicorp/go-multierror v1.0.0
+	github.com/containerd/containerd v1.0.0
+	google.golang.org/api v1.0.0
+	github.com/valyala/fasthttp v1.0.0
+	github.com/grpc-ecosystem/grpc-gateway v1.0.0
+	github.com/swaggo/swag v1.0.0
+	github.com/docker/docker v1.0.0
+	github.com/aws/aws-sdk-go-v2 v1.0.0
+	github.com/gorilla/websocket v1.0.0
+	github.com/rs/zerolog v1.0.0
+	github.com/go-resty/resty/v2 v1.0.0
+	github.com/pkg/errors v1.0.0
+	github.com/smartystreets/goconvey v1.0.0
+	github.com/go-playground/validator/v10 v1.0.0
+	github.com/elastic/go-elasticsearch/v8 v1.0.0
+	github.com/golang-jwt/jwt/v4 v1.0.0
+	github.com/nats-io/nats.go v1.0.0
+)
