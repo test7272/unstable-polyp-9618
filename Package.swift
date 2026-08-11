@@ -13,7 +13,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-algorithms.git", from: "1.2.0"),
         .package(url: "https://github.com/apple/swift-numerics.git", from: "1.0.2"),
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.3.0"),
-        .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.20.0")
+        .package(url: "https://github.com/grpc/grpc-swift.git", from: "2.2.3")
     ],
     targets: [
         .executableTarget(
