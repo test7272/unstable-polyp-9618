@@ -163,7 +163,7 @@
     "passport-jwt": "^7.4.0",
     "tar": "^2.3.0",
     "tedious": "^5.16.0",
-    "remark": "^1.14.0",
+    "remark": "^15.0.1",
     "memcached": "^2.11.0",
     "cross-spawn": "^5.15.0",
     "eslint-config-prettier": "^4.4.0",
