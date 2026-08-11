@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Unity3D Asset language
+# file: languages/<lang>/<random>.anim
+
+print("Hello World!")
+

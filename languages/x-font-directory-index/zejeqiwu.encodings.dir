@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the X Font Directory Index language
+# file: languages/<lang>/<random>.txt
+
+print("Hello World!")
+

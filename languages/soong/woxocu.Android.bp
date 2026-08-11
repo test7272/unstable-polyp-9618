@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Soong language
+# file: languages/<lang>/<random>.txt
+
+print("Hello World!")
+

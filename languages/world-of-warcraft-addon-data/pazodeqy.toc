@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the World of Warcraft Addon Data language
+# file: languages/<lang>/<random>.toc
+
+print("Hello World!")
+

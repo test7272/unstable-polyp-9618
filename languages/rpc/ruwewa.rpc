@@ -1,0 +1,6 @@
+program HELLO_PROG {
+  version HELLO_VERS {
+    string HELLO(void) = 1;
+  } = 1;
+} = 0x20000001;
+

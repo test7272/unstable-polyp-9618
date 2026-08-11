@@ -1,90 +1,96 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.chaos</groupId>
-  <artifactId>unstable-polyp-9618</artifactId>
+  <artifactId>radiant-polyp-4470</artifactId>
   <version>0.1.0</version>
   <packaging>jar</packaging>
   <properties><maven.compiler.source>21</maven.compiler.source><maven.compiler.target>21</maven.compiler.target></properties>
   <dependencies>
-    <dependency><groupId>org.apache.tomcat.embed</groupId><artifactId>tomcat-embed-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.hibernate.orm</groupId><artifactId>hibernate-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-cache</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.hamcrest</groupId><artifactId>hamcrest</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework</groupId><artifactId>spring-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.security</groupId><artifactId>spring-security-web</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.alibaba</groupId><artifactId>druid</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.elasticsearch.plugin</groupId><artifactId>transport-netty4-client</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>ch.qos.logback</groupId><artifactId>logback-classic</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>mysql</groupId><artifactId>mysql-connector-java</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.apache.solr</groupId><artifactId>solr-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.logging.log4j</groupId><artifactId>log4j-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.cache2k</groupId><artifactId>cache2k-api</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.curator</groupId><artifactId>curator-framework</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>io.undertow</groupId><artifactId>undertow-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.mongodb</groupId><artifactId>mongodb-driver-sync</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpclient</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.mybatis</groupId><artifactId>mybatis</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.zaxxer</groupId><artifactId>HikariCP</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>io.netty</groupId><artifactId>netty-all</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-actuator</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.baomidou</groupId><artifactId>mybatis-plus</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>redis.clients</groupId><artifactId>jedis</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.aspectj</groupId><artifactId>aspectjweaver</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.google.flatbuffers</groupId><artifactId>flatbuffers-java</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.github.eirslett</groupId><artifactId>frontend-maven-plugin</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-websocket</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.xerial</groupId><artifactId>sqlite-jdbc</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework</groupId><artifactId>spring-web</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.squareup.wire</groupId><artifactId>wire-runtime</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.zookeeper</groupId><artifactId>zookeeper</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.squareup.retrofit2</groupId><artifactId>retrofit</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.apache.thrift</groupId><artifactId>libthrift</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.assertj</groupId><artifactId>assertj-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.data</groupId><artifactId>spring-data-jpa</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.squareup.okhttp3</groupId><artifactId>okhttp</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.jsoup</groupId><artifactId>jsoup</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-test</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>io.reactivex.rxjava3</groupId><artifactId>rxjava</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-amqp</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.github.ben-manes.caffeine</groupId><artifactId>caffeine</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.squareup.moshi</groupId><artifactId>moshi</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.mockito</groupId><artifactId>mockito-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.security</groupId><artifactId>spring-security-config</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.github.pagehelper</groupId><artifactId>pagehelper</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.postgresql</groupId><artifactId>postgresql</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.mybatis</groupId><artifactId>mybatis-spring</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-data-redis</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>jakarta.persistence</groupId><artifactId>jakarta.persistence-api</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>log4j</groupId><artifactId>log4j</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.elasticsearch.client</groupId><artifactId>elasticsearch-rest-high-level-client</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.google.protobuf</groupId><artifactId>protobuf-java</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.json</groupId><artifactId>json</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.eclipse.jetty</groupId><artifactId>jetty-server</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.h2database</groupId><artifactId>h2</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-webflux</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-databind</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.google.guava</groupId><artifactId>guava</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.logging.log4j</groupId><artifactId>log4j-api</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.avro</groupId><artifactId>avro</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.openjdk.jmh</groupId><artifactId>jmh-core</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.squareup.okio</groupId><artifactId>okio</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.squareup.retrofit2</groupId><artifactId>retrofit</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-validation</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.google.code.gson</groupId><artifactId>gson</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>junit</groupId><artifactId>junit</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>mysql</groupId><artifactId>mysql-connector-java</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.commons</groupId><artifactId>commons-math3</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-mail</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.elasticsearch.client</groupId><artifactId>elasticsearch-rest-high-level-client</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-security</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>io.grpc</groupId><artifactId>grpc-netty-shaded</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.spark</groupId><artifactId>spark-core_2.13</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>com.google.protobuf</groupId><artifactId>protobuf-java</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.apache.lucene</groupId><artifactId>lucene-core</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.security</groupId><artifactId>spring-security-config</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-webflux</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.squareup.moshi</groupId><artifactId>moshi</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>com.alibaba</groupId><artifactId>fastjson</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.hamcrest</groupId><artifactId>hamcrest</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.squareup.wire</groupId><artifactId>wire-runtime</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>log4j</groupId><artifactId>log4j</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.curator</groupId><artifactId>curator-framework</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-security</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.alibaba</groupId><artifactId>druid</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.mybatis</groupId><artifactId>mybatis-spring</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.spark</groupId><artifactId>spark-core_2.13</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-data-redis</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.google.guava</groupId><artifactId>guava</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.data</groupId><artifactId>spring-data-jpa</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.hibernate.orm</groupId><artifactId>hibernate-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.github.ben-manes.caffeine</groupId><artifactId>caffeine</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.squareup.okhttp3</groupId><artifactId>okhttp</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.avro</groupId><artifactId>avro</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.hibernate.validator</groupId><artifactId>hibernate-validator</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>io.netty</groupId><artifactId>netty-all</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.google.code.gson</groupId><artifactId>gson</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.assertj</groupId><artifactId>assertj-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.h2database</groupId><artifactId>h2</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>io.undertow</groupId><artifactId>undertow-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>io.micrometer</groupId><artifactId>micrometer-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>jakarta.persistence</groupId><artifactId>jakarta.persistence-api</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.hadoop</groupId><artifactId>hadoop-common</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>junit</groupId><artifactId>junit</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.security</groupId><artifactId>spring-security-web</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.logging.log4j</groupId><artifactId>log4j-api</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-databind</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.lucene</groupId><artifactId>lucene-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.kafka</groupId><artifactId>kafka-clients</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.commons</groupId><artifactId>commons-math3</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.springframework.security</groupId><artifactId>spring-security-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>io.grpc</groupId><artifactId>grpc-netty-shaded</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.mongodb</groupId><artifactId>mongodb-driver-sync</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework</groupId><artifactId>spring-web</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.logging.log4j</groupId><artifactId>log4j-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.cache2k</groupId><artifactId>cache2k-api</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.zookeeper</groupId><artifactId>zookeeper</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.github.pagehelper</groupId><artifactId>pagehelper</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.mockito</groupId><artifactId>mockito-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>io.reactivex.rxjava3</groupId><artifactId>rxjava</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.squareup.okio</groupId><artifactId>okio</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpclient</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.postgresql</groupId><artifactId>postgresql</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework</groupId><artifactId>spring-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.jsoup</groupId><artifactId>jsoup</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.google.flatbuffers</groupId><artifactId>flatbuffers-java</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-mail</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.baomidou</groupId><artifactId>mybatis-plus</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-validation</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.xerial</groupId><artifactId>sqlite-jdbc</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.zaxxer</groupId><artifactId>HikariCP</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.apache.tomcat.embed</groupId><artifactId>tomcat-embed-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-amqp</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-test</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.elasticsearch.plugin</groupId><artifactId>transport-netty4-client</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.openjdk.jmh</groupId><artifactId>jmh-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.mybatis</groupId><artifactId>mybatis</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-websocket</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-actuator</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-cache</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>redis.clients</groupId><artifactId>jedis</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>com.github.eirslett</groupId><artifactId>frontend-maven-plugin</artifactId><version>1.0.0</version></dependency>
   </dependencies>
 </project>

@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the TextGrid language
+# file: languages/<lang>/<random>.textgrid
+
+print("Hello World!")
+

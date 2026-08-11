@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Survex data language
+# file: languages/<lang>/<random>.svx
+
+print("Hello World!")
+

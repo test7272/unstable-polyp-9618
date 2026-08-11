@@ -1,0 +1,4 @@
+@prefix ex: <http://example.org/> .
+ex:greeting a ex:Greeting ;
+  ex:text "Hello World!" .
+

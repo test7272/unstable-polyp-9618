@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Spline Font Database language
+# file: languages/<lang>/<random>.sfd
+
+print("Hello World!")
+

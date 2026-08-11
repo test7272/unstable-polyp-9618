@@ -1,0 +1,8 @@
+input texinfo
+@node Top
+@top Hello
+
+Hello World!
+
+@bye
+
