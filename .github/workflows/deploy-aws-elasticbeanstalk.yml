@@ -1,0 +1,19 @@
+name: Deploy to AWS Elastic Beanstalk
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v22
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: us-east-1
+          application_name: chaos
+          environment_name: chaos-prod
+          version_label: ${{ github.sha }}
+          deployment_package: .

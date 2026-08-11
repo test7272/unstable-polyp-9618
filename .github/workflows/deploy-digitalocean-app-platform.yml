@@ -1,0 +1,14 @@
+name: Deploy to DigitalOcean App Platform
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to DigitalOcean
+        uses: digitalocean/app_action@v2
+        with:
+          app_name: chaos
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}

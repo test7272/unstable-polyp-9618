@@ -1,0 +1,25 @@
+name: Deploy with AWS CodeDeploy
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1
+      - name: Bundle application
+        run: |
+          mkdir -p bundle
+          cp -r scripts appspec.yml bundle/
+          cd bundle && zip -r ../chaos.zip .
+      - name: Upload to S3 and create deployment
+        run: |
+          aws s3 cp chaos.zip s3://${{ secrets.CODEDEPLOY_BUCKET }}/chaos.zip
+          aws deploy create-deployment --application-name chaos             --deployment-group-name chaos-dg             --s3-location bucket=${{ secrets.CODEDEPLOY_BUCKET }},key=chaos.zip,bundleType=zip

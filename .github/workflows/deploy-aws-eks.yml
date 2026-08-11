@@ -1,0 +1,22 @@
+name: Deploy to Amazon EKS
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1
+      - uses: aws-actions/aws-eks-setup-kubectl@v1
+      - name: Update kubeconfig
+        run: |
+          aws eks update-kubeconfig --region us-east-1 --name chaos-cluster
+      - name: Apply manifests
+        run: kubectl apply -f k8s/deployment.yaml

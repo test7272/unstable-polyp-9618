@@ -1,0 +1,15 @@
+name: Deploy to Koyeb
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Koyeb CLI
+        run: curl -fsSL https://raw.githubusercontent.com/koyeb/koyeb-cli/master/install.sh | bash
+      - name: Deploy to Koyeb
+        run: koyeb app deploy chaos
+        env:
+          KOYEB_TOKEN: ${{ secrets.KOYEB_TOKEN }}

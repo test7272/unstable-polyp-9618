@@ -1,0 +1,21 @@
+name: Deploy to Azure Kubernetes Service (AKS)
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - uses: azure/aks-set-context@v3
+        with:
+          resource-group: chaos-rg
+          cluster-name: chaos-aks
+      - uses: azure/setup-kubectl@v4
+      - name: Deploy manifests
+        run: kubectl apply -f k8s/deployment.yaml
+      - name: Rollout status
+        run: kubectl rollout status deployment/chaos --timeout=300s

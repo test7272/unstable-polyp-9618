@@ -1,0 +1,23 @@
+name: Deploy to AWS Lambda
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1
+      - name: Package function
+        run: |
+          mkdir -p dist
+          zip -r dist/chaos.zip index.py
+      - name: Update Lambda function
+        run: |
+          aws lambda update-function-code --function-name chaos             --zip-file fileb://dist/chaos.zip

@@ -1,0 +1,23 @@
+name: Deploy to AWS Amplify
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1
+      - name: Install and build Amplify app
+        run: |
+          npm install
+          npm run build
+      - name: Deploy to Amplify
+        run: |
+          aws amplify start-deployment --app-id ${{ secrets.AMPLIFY_APP_ID }}             --branch main --source-url ./

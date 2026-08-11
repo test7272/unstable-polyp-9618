@@ -1,0 +1,20 @@
+name: Deploy to Cloud Foundry
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CF CLI
+        run: |
+          curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&version=v8" -o cf.tgz
+          tar -xzf cf.tgz
+          sudo mv cf /usr/local/bin/cf
+      - name: Push to Cloud Foundry
+        run: |
+          cf api ${{ secrets.CF_API }}
+          cf auth ${{ secrets.CF_USERNAME }} ${{ secrets.CF_PASSWORD }}
+          cf target -o ${{ secrets.CF_ORG }} -s ${{ secrets.CF_SPACE }}
+          cf push chaos

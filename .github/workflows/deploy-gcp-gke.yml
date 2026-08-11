@@ -1,0 +1,23 @@
+name: Deploy to Google Kubernetes Engine (GKE)
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+      - uses: google-github-actions/get-gke-credentials@v2
+        with:
+          cluster_name: chaos-cluster
+          location: us-central1
+      - name: Apply manifests
+        run: kubectl apply -f k8s/deployment.yaml

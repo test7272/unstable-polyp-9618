@@ -1,0 +1,15 @@
+name: Deploy to Alibaba Cloud Function Compute
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Serverless Devs CLI
+        run: npm i -g @serverless-devs/s
+      - name: Deploy Function Compute
+        run: |
+          s config add --AccessKeyID ${{ secrets.ALIBABA_ACCESS_KEY_ID }}             --AccessKeySecret ${{ secrets.ALIBABA_ACCESS_KEY_SECRET }} --alias chaos -a
+          s deploy -y

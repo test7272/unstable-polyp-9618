@@ -1,0 +1,24 @@
+name: Deploy to Google Cloud Functions
+"on":
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+      - name: Deploy Cloud Function
+        uses: google-github-actions/deploy-cloud-functions@v2
+        with:
+          name: chaos
+          runtime: python311
+          entry_point: hello_http
+          source_dir: .
