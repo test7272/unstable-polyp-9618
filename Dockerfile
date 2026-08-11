@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends     build-essential curl wget git ca-certificates     python3 python3-pip nodejs npm ruby ruby-bundler golang rustc cargo     openjdk-21-jdk-headless maven gradle php-cli clang cmake ninja-build     && rm -rf /var/lib/apt/lists/*
 
