@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the FlatBuffers language
+# file: languages/<lang>/<random>.fbs
+
+print("Hello World!")
+

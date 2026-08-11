@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the E-mail language
+# file: languages/<lang>/<random>.eml
+
+print("Hello World!")
+

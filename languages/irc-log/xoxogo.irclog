@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the IRC log language
+# file: languages/<lang>/<random>.irclog
+
+print("Hello World!")
+

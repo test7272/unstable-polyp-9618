@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the KiCad Legacy Layout language
+# file: languages/<lang>/<random>.brd
+
+print("Hello World!")
+

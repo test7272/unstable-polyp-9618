@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Godot Resource language
+# file: languages/<lang>/<random>.gdnlib
+
+print("Hello World!")
+

@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the GtkRC language
+# file: languages/<lang>/<random>.gtkrc
+
+print("Hello World!")
+

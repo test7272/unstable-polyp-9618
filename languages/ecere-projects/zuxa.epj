@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the Ecere Projects language
+# file: languages/<lang>/<random>.epj
+
+print("Hello World!")
+

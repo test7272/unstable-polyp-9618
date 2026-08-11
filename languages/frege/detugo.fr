@@ -1,0 +1,3 @@
+package hello where
+  main _ = println "Hello World!"
+

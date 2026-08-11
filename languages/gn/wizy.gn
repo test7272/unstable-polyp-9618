@@ -1,0 +1,5 @@
+# Generated best-effort Hello World for the GN language
+# file: languages/<lang>/<random>.gn
+
+print("Hello World!")
+
