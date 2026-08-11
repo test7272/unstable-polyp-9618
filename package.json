@@ -187,7 +187,7 @@
     "react-helmet-async": "^3.13.0",
     "ts-node": "^8.18.0",
     "wait-on": "^5.18.0",
-    "jotai": "^1.9.0",
+    "jotai": "^2.20.2",
     "eslint-plugin-vue": "^4.8.0",
     "micro": "^5.7.0",
     "eslint-plugin-node": "^5.0.0",
