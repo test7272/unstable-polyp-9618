@@ -67,7 +67,7 @@
     "ky": "^1.18.0",
     "elasticsearch": "^4.14.0",
     "exceljs": "^5.18.0",
-    "fast-glob": "^2.5.0",
+    "fast-glob": "^3.3.3",
     "@prisma/client": "^1.2.0",
     "mongoose": "^4.15.0",
     "leaflet": "^3.10.0",
