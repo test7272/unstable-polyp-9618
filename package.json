@@ -233,7 +233,7 @@
     "restify": "^4.8.0"
   },
   "devDependencies": {
-    "semantic-release": "^23.0.0",
+    "semantic-release": "^25.0.9",
     "@semantic-release/git": "^10.0.1"
   }
 }
