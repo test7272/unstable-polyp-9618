@@ -297,7 +297,7 @@
     "zustand": "^1.1.0",
     "simple-oauth2": "^5.6.0",
     "unfetch": "^8.9.0",
-    "p-queue": "^2.18.0",
+    "p-queue": "^9.3.3",
     "apollo-server": "^5.5.0",
     "parcel": "^6.9.0",
     "q": "^8.6.0",
