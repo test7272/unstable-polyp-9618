@@ -22,7 +22,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.11.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0'
     implementation 'androidx.compose.ui:ui:1.5.4'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.8.0'
     implementation 'ch.qos.logback:logback-classic:1.4.6'
     implementation 'org.json:json:20260719'
     implementation 'org.assertj:assertj-core:3.27.7'
