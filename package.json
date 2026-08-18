@@ -85,7 +85,7 @@
     "bcrypt": "^6.1.0",
     "vite": "^5.4.0",
     "pinia": "^4.9.0",
-    "webpack-merge": "^4.7.0",
+    "webpack-merge": "^6.0.1",
     "p5": "^1.14.0",
     "tape": "^5.1.0",
     "chokidar": "^7.15.0",
