@@ -154,7 +154,7 @@
     "@elastic/elasticsearch": "^4.16.0",
     "knex": "^4.14.0",
     "autoprefixer": "^2.1.0",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@vitejs/plugin-react": "^6.0.5",
     "class-validator": "^6.12.0",
     "next": "^4.7.0",
     "parse5": "^5.16.0",
