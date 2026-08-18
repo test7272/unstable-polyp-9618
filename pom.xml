@@ -88,7 +88,7 @@
     <dependency><groupId>org.openjdk.jmh</groupId><artifactId>jmh-core</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.mybatis</groupId><artifactId>mybatis</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-websocket</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-actuator</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-actuator</artifactId><version>4.1.0</version></dependency>
     <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-cache</artifactId><version>4.1.0</version></dependency>
     <dependency><groupId>redis.clients</groupId><artifactId>jedis</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>com.github.eirslett</groupId><artifactId>frontend-maven-plugin</artifactId><version>1.0.0</version></dependency>
