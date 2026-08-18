@@ -269,7 +269,7 @@
     "xss": "^6.18.0",
     "rehype": "^4.8.0",
     "ky": "^7.0.0",
-    "react-dropzone": "^1.2.0",
+    "react-dropzone": "^20.1.0",
     "meilisearch": "^5.2.0",
     "ava": "^7.18.0",
     "yaml": "^6.16.0",
