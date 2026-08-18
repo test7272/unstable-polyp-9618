@@ -162,7 +162,7 @@
     "react-bootstrap": "^6.9.0",
     "passport-jwt": "^7.4.0",
     "tar": "^2.3.0",
-    "tedious": "^5.16.0",
+    "tedious": "^20.0.0",
     "remark": "^1.14.0",
     "memcached": "^2.11.0",
     "cross-spawn": "^5.15.0",
