@@ -14,7 +14,7 @@ dependencies {
     implementation 'org.mongodb:mongodb-driver-sync:4.9.0'
     implementation 'com.android.tools.build:gradle:8.1.4'
     implementation 'com.squareup.sqldelight:runtime:1.5.5'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.22.1'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin:1.9.10'
     implementation 'com.squareup.sqldelight:android-driver:1.5.5'
