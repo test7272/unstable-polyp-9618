@@ -68,7 +68,7 @@
     <dependency><groupId>org.cache2k</groupId><artifactId>cache2k-api</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.apache.zookeeper</groupId><artifactId>zookeeper</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>com.github.pagehelper</groupId><artifactId>pagehelper</artifactId><version>1.0.0</version></dependency>
-    <dependency><groupId>org.mockito</groupId><artifactId>mockito-core</artifactId><version>1.0.0</version></dependency>
+    <dependency><groupId>org.mockito</groupId><artifactId>mockito-core</artifactId><version>5.23.0</version></dependency>
     <dependency><groupId>io.reactivex.rxjava3</groupId><artifactId>rxjava</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>com.squareup.okio</groupId><artifactId>okio</artifactId><version>1.0.0</version></dependency>
     <dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpclient</artifactId><version>1.0.0</version></dependency>
