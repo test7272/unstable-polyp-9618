@@ -29,7 +29,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web:4.1.0'
     implementation 'io.ktor:ktor-server-netty-jvm:3.5.2'
     implementation 'org.apache.commons:commons-lang3:3.20.0'
-    implementation 'org.eclipse.jetty:jetty-server:11.0.15'
+    implementation 'org.eclipse.jetty:jetty-server:12.1.12'
     implementation 'androidx.activity:activity-compose:1.13.0'
     implementation 'org.slf4j:slf4j-simple:2.0.18'
     implementation 'androidx.compose.foundation:foundation:1.5.4'
